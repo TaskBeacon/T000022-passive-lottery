@@ -1,0 +1,88 @@
+[
+  {
+    "id": "W2140531843",
+    "title": "Cerebral Correlates of Salient Prediction Error for Different Rewards and Punishments",
+    "authors": [
+      "Élise Météreau",
+      "Jean‐Claude Dreher"
+    ],
+    "year": 2012,
+    "journal": "Cerebral Cortex",
+    "doi_or_url": "https://doi.org/10.1093/cercor/bhs037",
+    "citation_count": 117,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2035219495",
+    "title": "Testing the Reward Prediction Error Hypothesis with an Axiomatic Model",
+    "authors": [
+      "Robb B. Rutledge",
+      "Mark Dean",
+      "Andrew Caplin",
+      "Paul W. Glimcher"
+    ],
+    "year": 2010,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.1747-10.2010",
+    "citation_count": 262,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2002597000",
+    "title": "Choice from Non-Choice: Predicting Consumer Preferences from Blood Oxygenation Level-Dependent Signals Obtained during Passive Viewing",
+    "authors": [
+      "Ifat Levy",
+      "Stephanie C. Lazzaro",
+      "Robb B. Rutledge",
+      "Paul W. Glimcher"
+    ],
+    "year": 2011,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.3214-10.2011",
+    "citation_count": 212,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2024690164",
+    "title": "The Known Unknowns: Neural Representation of Second-Order Uncertainty, and Ambiguity",
+    "authors": [
+      "Dominik R. Bach",
+      "Oliver J. Hulme",
+      "W.D. Penny",
+      "Raymond J. Dolan"
+    ],
+    "year": 2011,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.1452-10.2011",
+    "citation_count": 113,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  }
+]

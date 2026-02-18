@@ -1,0 +1,2594 @@
+[
+  {
+    "id": "W2157228429",
+    "title": "Third-party punishment and social norms",
+    "authors": [
+      "Ernst Fehr",
+      "Urs Fischbacher"
+    ],
+    "year": 2004,
+    "journal": "Evolution and Human Behavior",
+    "doi_or_url": "https://doi.org/10.1016/s1090-5138(04)00005-4",
+    "citation_count": 2274,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2107295826",
+    "title": "Economic Analysis of Social Interactions",
+    "authors": [
+      "Charles F. Manski"
+    ],
+    "year": 2000,
+    "journal": "The Journal of Economic Perspectives",
+    "doi_or_url": "https://doi.org/10.1257/jep.14.3.115",
+    "citation_count": 2065,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2975308768",
+    "title": "From Efficient Markets Theory to Behavioral Finance",
+    "authors": [
+      "Robert J. Shiller"
+    ],
+    "year": 2003,
+    "journal": "The Journal of Economic Perspectives",
+    "doi_or_url": "https://doi.org/10.1257/089533003321164967",
+    "citation_count": 1698,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2591654989",
+    "title": "Culture and Institutions",
+    "authors": [
+      "Alberto Alesina",
+      "Paola Giuliano"
+    ],
+    "year": 2015,
+    "journal": "Journal of Economic Literature",
+    "doi_or_url": "https://doi.org/10.1257/jel.53.4.898",
+    "citation_count": 1367,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3122442489",
+    "title": "Equity Portfolio Diversification",
+    "authors": [
+      "William N. Goetzmann",
+      "Alok Kumar"
+    ],
+    "year": 2008,
+    "journal": "European Finance Review",
+    "doi_or_url": "https://doi.org/10.1093/rof/rfn005",
+    "citation_count": 1204,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1907293129",
+    "title": "SoK: Research Perspectives and Challenges for Bitcoin and Cryptocurrencies",
+    "authors": [
+      "Joseph Bonneau",
+      "Andrew Miller",
+      "Jeremy Clark",
+      "Arvind Narayanan",
+      "Joshua A. Kroll",
+      "Edward W. Felten"
+    ],
+    "year": 2015,
+    "journal": "Unknown",
+    "doi_or_url": "https://doi.org/10.1109/sp.2015.14",
+    "citation_count": 1195,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4238212557",
+    "title": "Information Avoidance",
+    "authors": [
+      "Russell Golman",
+      "David Hagmann",
+      "George Loewenstein"
+    ],
+    "year": 2017,
+    "journal": "Journal of Economic Literature",
+    "doi_or_url": "https://doi.org/10.1257/jel.20151245",
+    "citation_count": 754,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3123463080",
+    "title": "Nudge and the Manipulation of Choice",
+    "authors": [
+      "Pelle Guldborg Hansen",
+      "Andreas Maal\u00f8e Jespersen"
+    ],
+    "year": 2013,
+    "journal": "European Journal of Risk Regulation",
+    "doi_or_url": "https://doi.org/10.1017/s1867299x00002762",
+    "citation_count": 733,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2067609776",
+    "title": "A Virtual Reprise of the Stanley Milgram Obedience Experiments",
+    "authors": [
+      "Mel Slater",
+      "Angus Antley",
+      "Adam Davison",
+      "David Swapp",
+      "Christoph Guger",
+      "Chris Barker",
+      "Nancy Pistrang",
+      "Mar\u00eda V. S\u00e1nchez-Vives"
+    ],
+    "year": 2006,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0000039",
+    "citation_count": 613,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2131964552",
+    "title": "Population Approaches to Improve Diet, Physical Activity, and Smoking Habits",
+    "authors": [
+      "Dariush Mozaffarian",
+      "Ashkan Afshin",
+      "Neal L. Benowitz",
+      "Vera Bittner",
+      "Stephen R. Daniels",
+      "Harold A. Franch",
+      "David R. Jacobs",
+      "William E. Kraus",
+      "Penny M. Kris\u2010Etherton",
+      "Debra A. Krummel",
+      "Barry M. Popkin",
+      "Laurie P. Whitsel"
+    ],
+    "year": 2012,
+    "journal": "Circulation",
+    "doi_or_url": "https://doi.org/10.1161/cir.0b013e318260a20b",
+    "citation_count": 588,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2104699783",
+    "title": "Egg banks in freshwater zooplankton: evolutionary and ecological archives in the sediment",
+    "authors": [
+      "Luc Brendonck",
+      "Luc De Meester"
+    ],
+    "year": 2003,
+    "journal": "Hydrobiologia",
+    "doi_or_url": "https://doi.org/10.1023/a:1024454905119",
+    "citation_count": 545,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3177044644",
+    "title": "Identity Under Construction: How Individuals Come to Define Themselves in Organizations",
+    "authors": [
+      "Blake E. Ashforth",
+      "Beth S. Schinoff"
+    ],
+    "year": 2016,
+    "journal": "Annual Review of Organizational Psychology and Organizational Behavior",
+    "doi_or_url": "https://doi.org/10.1146/annurev-orgpsych-041015-062322",
+    "citation_count": 512,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1980524096",
+    "title": "The Effect of India's Total Sanitation Campaign on Defecation Behaviors and Child Health in Rural Madhya Pradesh: A Cluster Randomized Controlled Trial",
+    "authors": [
+      "Sumeet Patil",
+      "Benjamin F. Arnold",
+      "Alicia L. Salvatore",
+      "Bertha Brice\u00f1o",
+      "Sandipan Ganguly",
+      "John M. Colford",
+      "Paul Gertler"
+    ],
+    "year": 2014,
+    "journal": "PLoS Medicine",
+    "doi_or_url": "https://doi.org/10.1371/journal.pmed.1001709",
+    "citation_count": 488,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4213371756",
+    "title": "Bad is stronger than good.",
+    "authors": [
+      "Roy F. Baumeister",
+      "Ellen Bratslavsky",
+      "Catrin Finkenauer",
+      "Kathleen D. Vohs"
+    ],
+    "year": 2001,
+    "journal": "Review of General Psychology",
+    "doi_or_url": "https://doi.org/10.1037//1089-2680.5.4.323",
+    "citation_count": 434,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2144642244",
+    "title": "Software engineering for security",
+    "authors": [
+      "Pr\u00e9mkumar D\u00e9vanbu",
+      "Stuart G. Stubblebine"
+    ],
+    "year": 2000,
+    "journal": "Unknown",
+    "doi_or_url": "https://doi.org/10.1145/336512.336559",
+    "citation_count": 418,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3125917831",
+    "title": "Do Investors Overweight Personal Experience? Evidence from IPO Subscriptions",
+    "authors": [
+      "Markku Kaustia",
+      "Samuli Kn\u00fcpfer"
+    ],
+    "year": 2008,
+    "journal": "The Journal of Finance",
+    "doi_or_url": "https://doi.org/10.1111/j.1540-6261.2008.01411.x",
+    "citation_count": 410,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1960516996",
+    "title": "Social Justice and Social Movements",
+    "authors": [
+      "Tom R. Tyler",
+      "Heather J. Smith"
+    ],
+    "year": 1995,
+    "journal": "eScholarship (California Digital Library)",
+    "doi_or_url": "https://openalex.org/W1960516996",
+    "citation_count": 406,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3121661561",
+    "title": "Are Investors Rational? Choices among Index Funds",
+    "authors": [
+      "Edwin J. Elton",
+      "Martin J. Gruber",
+      "Jeffrey A. Busse"
+    ],
+    "year": 2004,
+    "journal": "The Journal of Finance",
+    "doi_or_url": "https://doi.org/10.1111/j.1540-6261.2004.00633.x",
+    "citation_count": 373,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2738329935",
+    "title": "Early detection of consciousness in patients with acute severe traumatic brain injury",
+    "authors": [
+      "Brian L. Edlow",
+      "Camille Chatelle",
+      "Camille A. Spencer",
+      "Catherine J. Chu",
+      "Yelena G. Bodien",
+      "Kathryn L. O\u2019Connor",
+      "Ronald E. Hirschberg",
+      "Leigh R. Hochberg",
+      "Joseph T. Giacino",
+      "Eric S. Rosenthal",
+      "Ona Wu"
+    ],
+    "year": 2017,
+    "journal": "Brain",
+    "doi_or_url": "https://doi.org/10.1093/brain/awx176",
+    "citation_count": 367,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2115675543",
+    "title": "Understanding Pensions: Cognitive Function, Numerical Ability and Retirement Saving*",
+    "authors": [
+      "James Banks",
+      "Zo\u00eb Oldfield"
+    ],
+    "year": 2007,
+    "journal": "Fiscal Studies",
+    "doi_or_url": "https://doi.org/10.1111/j.1475-5890.2007.00052.x",
+    "citation_count": 352,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2097104268",
+    "title": "Positive design: An introduction to design for subjective well-being",
+    "authors": [
+      "Pieter Desmet",
+      "Anna E. Pohlmeyer"
+    ],
+    "year": 2013,
+    "journal": "Data Archiving and Networked Services (DANS)",
+    "doi_or_url": "https://openalex.org/W2097104268",
+    "citation_count": 351,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3143407144",
+    "title": "Life-span theory in developmental psychology",
+    "authors": [
+      "P. B. Baltes"
+    ],
+    "year": 1998,
+    "journal": "Unknown",
+    "doi_or_url": "https://openalex.org/W3143407144",
+    "citation_count": 346,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2165913026",
+    "title": "Newly introduced genomic prophage islands are critical determinants of in vivo competitiveness in the Liverpool Epidemic Strain of <i>Pseudomonas aeruginosa</i>",
+    "authors": [
+      "Craig Winstanley",
+      "Morgan G. I. Langille",
+      "Joanne L. Fothergill",
+      "Irena Kukavica\u2010Ibrulj",
+      "Catherine Paradis\u2010Bleau",
+      "Fran\u00e7ois Sanschagrin",
+      "Nicholas R. Thomson",
+      "Geoffrey L. Winsor",
+      "Michael A. Quail",
+      "Nicola Lennard",
+      "Alexandra Bignell",
+      "Louise Clarke"
+    ],
+    "year": 2008,
+    "journal": "Genome Research",
+    "doi_or_url": "https://doi.org/10.1101/gr.086082.108",
+    "citation_count": 338,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3196053934",
+    "title": "Vegetation ecology: theory, methods and applications with reference to Fennoscandia",
+    "authors": [
+      "Rune Halvorsen \u00d8kland"
+    ],
+    "year": 1990,
+    "journal": "Sommerfeltia",
+    "doi_or_url": "https://doi.org/10.2478/som-1990-0003",
+    "citation_count": 333,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2941702032",
+    "title": "Security, Performance, and Applications of Smart Contracts: A Systematic Survey",
+    "authors": [
+      "Sara Rouhani",
+      "Ralph Deters"
+    ],
+    "year": 2019,
+    "journal": "IEEE Access",
+    "doi_or_url": "https://doi.org/10.1109/access.2019.2911031",
+    "citation_count": 300,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2786022849",
+    "title": "From Cashews to Nudges: The Evolution of Behavioral Economics",
+    "authors": [
+      "Richard H. Thaler"
+    ],
+    "year": 2018,
+    "journal": "American Economic Review",
+    "doi_or_url": "https://doi.org/10.1257/aer.108.6.1265",
+    "citation_count": 297,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2124048226",
+    "title": "Allotment gardening and health: a comparative survey among allotment gardeners and their neighbors without an allotment",
+    "authors": [
+      "A.E. van den Berg",
+      "Marijke van Winsum-Westra",
+      "S. de Vries",
+      "Sonja ME van Dillen"
+    ],
+    "year": 2010,
+    "journal": "Environmental Health",
+    "doi_or_url": "https://doi.org/10.1186/1476-069x-9-74",
+    "citation_count": 294,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2099461527",
+    "title": "Evaluating Survey Quality in Health Services Research: A Decision Framework for Assessing Nonresponse Bias",
+    "authors": [
+      "Jonathon R. B. Halbesleben",
+      "Marilyn V. Whitman"
+    ],
+    "year": 2012,
+    "journal": "Health Services Research",
+    "doi_or_url": "https://doi.org/10.1111/1475-6773.12002",
+    "citation_count": 290,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2035455338",
+    "title": "Mindfulness and Compassion: An Examination of Mechanism and Scalability",
+    "authors": [
+      "Daniel Lim",
+      "Paul Condon",
+      "David DeSteno"
+    ],
+    "year": 2015,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0118221",
+    "citation_count": 289,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1979297327",
+    "title": "Neuroeconomic Foundations of Economic Choice\u2014Recent Advances",
+    "authors": [
+      "Ernst Fehr",
+      "Antonio Rangel"
+    ],
+    "year": 2011,
+    "journal": "The Journal of Economic Perspectives",
+    "doi_or_url": "https://doi.org/10.1257/jep.25.4.3",
+    "citation_count": 279,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1904532178",
+    "title": "Crowdfunding And The Federal Securities Laws",
+    "authors": [
+      "C. Steven Bradford"
+    ],
+    "year": 2012,
+    "journal": "Columbia Business Law Review",
+    "doi_or_url": "https://doi.org/10.52214/cblr.v2012i1.13858",
+    "citation_count": 276,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2026467459",
+    "title": "Shame in Two Cultures: Implications for Evolutionary Approaches",
+    "authors": [
+      "Daniel M. T. Fessler"
+    ],
+    "year": 2004,
+    "journal": "Journal of Cognition and Culture",
+    "doi_or_url": "https://doi.org/10.1163/1568537041725097",
+    "citation_count": 270,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2170986688",
+    "title": "Beliefs, Doubts and Learning: Valuing Macroeconomic Risk",
+    "authors": [
+      "Lars Peter Hansen"
+    ],
+    "year": 2007,
+    "journal": "American Economic Review",
+    "doi_or_url": "https://doi.org/10.1257/aer.97.2.1",
+    "citation_count": 270,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2035219495",
+    "title": "Testing the Reward Prediction Error Hypothesis with an Axiomatic Model",
+    "authors": [
+      "Robb B. Rutledge",
+      "Mark Dean",
+      "Andrew Caplin",
+      "Paul W. Glimcher"
+    ],
+    "year": 2010,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.1747-10.2010",
+    "citation_count": 262,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2130546085",
+    "title": "Applying Insights from Behavioral Economics to Policy Design",
+    "authors": [
+      "Brigitte C. Madrian"
+    ],
+    "year": 2014,
+    "journal": "Annual Review of Economics",
+    "doi_or_url": "https://doi.org/10.1146/annurev-economics-080213-041033",
+    "citation_count": 244,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3016920580",
+    "title": "The relationship between household chaos and child, parent, and family outcomes: a systematic scoping review",
+    "authors": [
+      "Samantha Marsh",
+      "Rosie Dobson",
+      "Ralph Maddison"
+    ],
+    "year": 2020,
+    "journal": "BMC Public Health",
+    "doi_or_url": "https://doi.org/10.1186/s12889-020-08587-8",
+    "citation_count": 244,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2000454627",
+    "title": "Two routes to actorhood: lexicalized potency to act and identification of the actor role",
+    "authors": [
+      "Sabine Frenzel",
+      "Matthias Schlesewsky",
+      "Ina Bornkessel\u2010Schlesewsky"
+    ],
+    "year": 2015,
+    "journal": "Frontiers in Psychology",
+    "doi_or_url": "https://doi.org/10.3389/fpsyg.2015.00001",
+    "citation_count": 240,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2014666829",
+    "title": "Economic valuation of cultural heritage sites: A choice modeling approach",
+    "authors": [
+      "Andy S. Choi",
+      "Brent W. Ritchie",
+      "Franco Papandrea",
+      "Jeff Bennett"
+    ],
+    "year": 2009,
+    "journal": "Tourism Management",
+    "doi_or_url": "https://doi.org/10.1016/j.tourman.2009.02.014",
+    "citation_count": 239,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1992967807",
+    "title": "How Do Public Organizations Learn? Bridging Cultural and Structural Perspectives",
+    "authors": [
+      "Donald P. Moynihan",
+      "Noel Landuyt"
+    ],
+    "year": 2009,
+    "journal": "Public Administration Review",
+    "doi_or_url": "https://doi.org/10.1111/j.1540-6210.2009.02067.x",
+    "citation_count": 237,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1574274413",
+    "title": "Fragile beliefs and the price of uncertainty",
+    "authors": [
+      "Lars Peter Hansen",
+      "Thomas J. Sargent"
+    ],
+    "year": 2010,
+    "journal": "Quantitative Economics",
+    "doi_or_url": "https://doi.org/10.3982/qe9",
+    "citation_count": 224,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4207039078",
+    "title": "Antecedents to the Adoption of Mobile Payment in China and Italy: an Integration of UTAUT2 and Innovation Resistance Theory",
+    "authors": [
+      "Giacomo Migliore",
+      "Ralf Wagner",
+      "Felipe Schneider Cechella",
+      "Francisco Li\u00e9bana\u2010Cabanillas"
+    ],
+    "year": 2022,
+    "journal": "Information Systems Frontiers",
+    "doi_or_url": "https://doi.org/10.1007/s10796-021-10237-2",
+    "citation_count": 213,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2002597000",
+    "title": "Choice from Non-Choice: Predicting Consumer Preferences from Blood Oxygenation Level-Dependent Signals Obtained during Passive Viewing",
+    "authors": [
+      "Ifat Levy",
+      "Stephanie C. Lazzaro",
+      "Robb B. Rutledge",
+      "Paul W. Glimcher"
+    ],
+    "year": 2011,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.3214-10.2011",
+    "citation_count": 212,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4283313119",
+    "title": "The Role of Machine Learning in Cybersecurity",
+    "authors": [
+      "Giovanni Apruzzese",
+      "Pavel Laskov",
+      "Edgardo Montes de",
+      "Wissam Mallouli",
+      "Luis Brdalo Rapa",
+      "Athanasios Vasileios Grammatopoulos",
+      "Fabio Di Franco"
+    ],
+    "year": 2022,
+    "journal": "Digital Threats Research and Practice",
+    "doi_or_url": "https://doi.org/10.1145/3545574",
+    "citation_count": 211,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3020875595",
+    "title": "International Comparative Household Finance",
+    "authors": [
+      "Cristian Badarinza",
+      "John Y. Campbell",
+      "Tarun Ramadorai"
+    ],
+    "year": 2016,
+    "journal": "Annual Review of Economics",
+    "doi_or_url": "https://doi.org/10.1146/annurev-economics-080315-015425",
+    "citation_count": 210,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2167234115",
+    "title": "A Survey of Experimental Research on Contests, All-Pay Auctions and Tournaments",
+    "authors": [
+      "Emmanuel Dechenaux",
+      "Dan Kovenock",
+      "Roman M. Sheremeta"
+    ],
+    "year": 2012,
+    "journal": "SSRN Electronic Journal",
+    "doi_or_url": "https://doi.org/10.2139/ssrn.2154022",
+    "citation_count": 209,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4205640428",
+    "title": "A survey of application research based on blockchain smart contract",
+    "authors": [
+      "Shiyi Lin",
+      "Lei Zhang",
+      "Jing Li",
+      "Li-li Ji",
+      "Yu-E Sun"
+    ],
+    "year": 2022,
+    "journal": "Wireless Networks",
+    "doi_or_url": "https://doi.org/10.1007/s11276-021-02874-x",
+    "citation_count": 206,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2584114422",
+    "title": "\u201cDon't pretend to be my friend!\u201d When an informal brand communication style backfires on social media",
+    "authors": [
+      "Ana\u00efs Gretry",
+      "Csilla Horv\u00e1th",
+      "Nina Belei",
+      "Allard C.R. van Riel"
+    ],
+    "year": 2017,
+    "journal": "Journal of Business Research",
+    "doi_or_url": "https://doi.org/10.1016/j.jbusres.2017.01.012",
+    "citation_count": 204,
+    "is_high_impact": false,
+    "open_access": false,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2086937387",
+    "title": "Interaction between emotional state and learning underlies mood instability",
+    "authors": [
+      "Eran Eldar",
+      "Yael Niv"
+    ],
+    "year": 2015,
+    "journal": "Nature Communications",
+    "doi_or_url": "https://doi.org/10.1038/ncomms7149",
+    "citation_count": 204,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3090717071",
+    "title": "Phishing Attacks Survey: Types, Vectors, and Technical Approaches",
+    "authors": [
+      "Rana Alabdan"
+    ],
+    "year": 2020,
+    "journal": "Future Internet",
+    "doi_or_url": "https://doi.org/10.3390/fi12100168",
+    "citation_count": 203,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1995805387",
+    "title": "Teaching Economics in the 21st Century",
+    "authors": [
+      "William E. Becker"
+    ],
+    "year": 2000,
+    "journal": "The Journal of Economic Perspectives",
+    "doi_or_url": "https://doi.org/10.1257/jep.14.1.109",
+    "citation_count": 199,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2605505068",
+    "title": "Community-based strategies to strengthen men\u2019s engagement in the HIV care cascade in sub-Saharan Africa",
+    "authors": [
+      "Monisha Sharma",
+      "Ruanne V. Barnabas",
+      "Connie Celum"
+    ],
+    "year": 2017,
+    "journal": "PLoS Medicine",
+    "doi_or_url": "https://doi.org/10.1371/journal.pmed.1002262",
+    "citation_count": 199,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2081262872",
+    "title": "Understanding the Processes that Regulate Positive Emotional Experience: Unsolved Problems and Future Directions for Theory and Research on Savoring",
+    "authors": [
+      "Fred B. Bryant",
+      "Erica D. Chadwick",
+      "Katharina Kluwe"
+    ],
+    "year": 2011,
+    "journal": "International Journal of Wellbeing",
+    "doi_or_url": "https://doi.org/10.5502/ijw.v1i1.18",
+    "citation_count": 196,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2164121118",
+    "title": "Social \u2018wanting\u2019 dysfunction in autism: neurobiological underpinnings and treatment implications",
+    "authors": [
+      "Gregor Kohls",
+      "Coralie Chevallier",
+      "Vanessa Troiani",
+      "Robert T. Schultz"
+    ],
+    "year": 2012,
+    "journal": "Journal of Neurodevelopmental Disorders",
+    "doi_or_url": "https://doi.org/10.1186/1866-1955-4-10",
+    "citation_count": 196,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W777471952",
+    "title": "The Dormant Commerce Clause and the Internet",
+    "authors": [
+      "Jack L. Goldsmith",
+      "Alan O. Sykes"
+    ],
+    "year": 2000,
+    "journal": "Unknown",
+    "doi_or_url": "https://openalex.org/W777471952",
+    "citation_count": 190,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2287429606",
+    "title": "Distributed Constraint Optimization Problems and Applications: A Survey",
+    "authors": [
+      "Ferdinando Fioretto",
+      "Enrico Pontelli",
+      "William Yeoh"
+    ],
+    "year": 2018,
+    "journal": "Journal of Artificial Intelligence Research",
+    "doi_or_url": "https://doi.org/10.1613/jair.5565",
+    "citation_count": 189,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2560657936",
+    "title": "The Impact of Customer Involvement on New Product Development: Contingent and Substitutive Effects",
+    "authors": [
+      "Anna Shaojie Cui",
+      "Fang Wu"
+    ],
+    "year": 2016,
+    "journal": "Journal of Product Innovation Management",
+    "doi_or_url": "https://doi.org/10.1111/jpim.12326",
+    "citation_count": 187,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2196447821",
+    "title": "Does a Virtual like Cause Actual Liking? How following a Brand's Facebook Updates Enhances Brand Evaluations and Purchase Intention",
+    "authors": [
+      "Camiel J. Beukeboom",
+      "Peter Kerkhof",
+      "M. de Vries"
+    ],
+    "year": 2015,
+    "journal": "Journal of Interactive Marketing",
+    "doi_or_url": "https://doi.org/10.1016/j.intmar.2015.09.003",
+    "citation_count": 186,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2119485768",
+    "title": "Vacation (after-) effects on employee health and well-being, and the role of vacation activities, experiences and sleep",
+    "authors": [
+      "Jessica de Bloom",
+      "Sabine A. E. Geurts",
+      "Michiel A. J. Kompier"
+    ],
+    "year": 2012,
+    "journal": "Journal of Happiness Studies",
+    "doi_or_url": "https://doi.org/10.1007/s10902-012-9345-3",
+    "citation_count": 186,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1481224849",
+    "title": "Respiratory-related neuronal activity in the nucleus ambiguus-retroambigualis complex and their responses to peripheral and central stimulation in the rat",
+    "authors": [
+      "RJ Balnave",
+      "ZG Huang",
+      "SH Subramanian",
+      "A. B. Turman"
+    ],
+    "year": 2001,
+    "journal": "Respiratory Research",
+    "doi_or_url": "https://doi.org/10.1186/rr126",
+    "citation_count": 185,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3016383410",
+    "title": "What happens to young adults who have engaged in self-injurious behavior as adolescents? A 10-year follow-up",
+    "authors": [
+      "Daiva Daukantait\u00e9",
+      "Lars\u2010Gunnar Lundh",
+      "Margit W\u00e5ngby\u2010Lundh",
+      "Benjamin Clar\u00e9us",
+      "Jonas Bj\u00e4rehed",
+      "Ya Zhou",
+      "Sophie Liljedahl"
+    ],
+    "year": 2020,
+    "journal": "European Child & Adolescent Psychiatry",
+    "doi_or_url": "https://doi.org/10.1007/s00787-020-01533-4",
+    "citation_count": 182,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2945404821",
+    "title": "Sensing sociability: Individual differences in young adults\u2019 conversation, calling, texting, and app use behaviors in daily life.",
+    "authors": [
+      "Gabriella M. Harari",
+      "Sandrine R. M\u00fcller",
+      "Clemens Stachl",
+      "Rui Wang",
+      "Weichen Wang",
+      "Markus B\u00fchner",
+      "Peter J. Rentfrow",
+      "Andrew T. Campbell",
+      "Samuel D. Gosling"
+    ],
+    "year": 2019,
+    "journal": "Journal of Personality and Social Psychology",
+    "doi_or_url": "https://doi.org/10.1037/pspp0000245",
+    "citation_count": 179,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2049965297",
+    "title": "The Neurobiology of Reference-Dependent Value Computation",
+    "authors": [
+      "Benedetto De Martino",
+      "Dharshan Kumaran",
+      "Beatrice Holt",
+      "Raymond J. Dolan"
+    ],
+    "year": 2009,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.4832-08.2009",
+    "citation_count": 174,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1993657247",
+    "title": "Neg-raising and positive polarity: The view from modals",
+    "authors": [
+      "Vincent Homer"
+    ],
+    "year": 2015,
+    "journal": "Semantics and Pragmatics",
+    "doi_or_url": "https://doi.org/10.3765/sp.8.4",
+    "citation_count": 174,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2329358264",
+    "title": "Pitfalls, Potentials, and Ethics of Online Survey Research: LGBTQ and Other Marginalized and Hard-to-Access Youths",
+    "authors": [
+      "Lauren B. McInroy"
+    ],
+    "year": 2016,
+    "journal": "Social Work Research",
+    "doi_or_url": "https://doi.org/10.1093/swr/svw005",
+    "citation_count": 171,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2073347850",
+    "title": "Visualising the invisible: a network approach to reveal the informal social side of student learning",
+    "authors": [
+      "Juli\u00ebtte Hommes",
+      "Bart Rienties",
+      "Willem de Grave",
+      "Gerard M.J. Bos",
+      "Lambert Schuwirth",
+      "Albert Scherpbier"
+    ],
+    "year": 2012,
+    "journal": "Advances in Health Sciences Education",
+    "doi_or_url": "https://doi.org/10.1007/s10459-012-9349-0",
+    "citation_count": 167,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2556421768",
+    "title": "The mismanaged soul: Existential labor and the erosion of meaningful work",
+    "authors": [
+      "Catherine Bailey",
+      "Adrian Madden",
+      "Kerstin Alfes",
+      "Amanda Shantz",
+      "Emma Soane"
+    ],
+    "year": 2016,
+    "journal": "Human Resource Management Review",
+    "doi_or_url": "https://doi.org/10.1016/j.hrmr.2016.11.001",
+    "citation_count": 164,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2124045366",
+    "title": "Conveniently Upset: Avoiding Altruism by Distorting Beliefs about Others' Altruism",
+    "authors": [
+      "Rafael Di Tella",
+      "Ricardo P\u00e9rez-Truglia",
+      "Andr\u00e9s Babino",
+      "Mariano Sigman"
+    ],
+    "year": 2015,
+    "journal": "American Economic Review",
+    "doi_or_url": "https://doi.org/10.1257/aer.20141409",
+    "citation_count": 163,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2964555133",
+    "title": "Social Influence in Adolescent Decision-Making: A Formal Framework",
+    "authors": [
+      "Simon Ciranka",
+      "Wouter van den Bos"
+    ],
+    "year": 2019,
+    "journal": "Frontiers in Psychology",
+    "doi_or_url": "https://doi.org/10.3389/fpsyg.2019.01915",
+    "citation_count": 162,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2736629042",
+    "title": "How Do Individuals Repay Their Debt? The Balance-Matching Heuristic",
+    "authors": [
+      "John Gathergood",
+      "Neale Mahoney",
+      "Neil Stewart",
+      "J\u00f6rg Weber"
+    ],
+    "year": 2019,
+    "journal": "American Economic Review",
+    "doi_or_url": "https://doi.org/10.1257/aer.20180288",
+    "citation_count": 160,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2902629989",
+    "title": "Measuring Ethereum Network Peers",
+    "authors": [
+      "Seoung Kyun Kim",
+      "Zane Ma",
+      "Siddharth Murali",
+      "Joshua Mason",
+      "Andrew Miller",
+      "Michael Bailey"
+    ],
+    "year": 2018,
+    "journal": "Unknown",
+    "doi_or_url": "https://doi.org/10.1145/3278532.3278542",
+    "citation_count": 160,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2095910247",
+    "title": "Social Epigenetics and Equality of Opportunity",
+    "authors": [
+      "Michele Loi",
+      "Lorenzo Del Savio",
+      "Elia Stupka"
+    ],
+    "year": 2013,
+    "journal": "Public Health Ethics",
+    "doi_or_url": "https://doi.org/10.1093/phe/pht019",
+    "citation_count": 157,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2571098051",
+    "title": "Field Experiments in Organizations",
+    "authors": [
+      "Dov Eden"
+    ],
+    "year": 2017,
+    "journal": "Annual Review of Organizational Psychology and Organizational Behavior",
+    "doi_or_url": "https://doi.org/10.1146/annurev-orgpsych-041015-062400",
+    "citation_count": 153,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2075136594",
+    "title": "Efficacy of Neonatal HBV Vaccination on Liver Cancer and Other Liver Diseases over 30-Year Follow-up of the Qidong Hepatitis B Intervention Study: A Cluster Randomized Controlled Trial",
+    "authors": [
+      "Chunfeng Qu",
+      "Taoyang Chen",
+      "Chunsun Fan",
+      "Qimin Zhan",
+      "Yuting Wang",
+      "Jianhua Lu",
+      "Lingling Lu",
+      "Zhengping Ni",
+      "Fei Huang",
+      "Hongyu Yao",
+      "Jian Zhu",
+      "Jian Fan"
+    ],
+    "year": 2014,
+    "journal": "PLoS Medicine",
+    "doi_or_url": "https://doi.org/10.1371/journal.pmed.1001774",
+    "citation_count": 152,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4385984544",
+    "title": "Placebo Tests for Causal Inference",
+    "authors": [
+      "Andrew C. Eggers",
+      "Guadalupe Tu\u00f1\u00f3n",
+      "Allan Dafoe"
+    ],
+    "year": 2023,
+    "journal": "American Journal of Political Science",
+    "doi_or_url": "https://doi.org/10.1111/ajps.12818",
+    "citation_count": 152,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2143787918",
+    "title": "A systematic mapping review of effective interventions for communicating with, supporting and providing information to parents of preterm infants",
+    "authors": [
+      "Jo Brett",
+      "Sophie Staniszewska",
+      "Mary Newburn",
+      "Nicola Jones",
+      "Leslie Taylor"
+    ],
+    "year": 2011,
+    "journal": "BMJ Open",
+    "doi_or_url": "https://doi.org/10.1136/bmjopen-2010-000023",
+    "citation_count": 149,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2791683671",
+    "title": "Taking Action on Air Pollution Control in the Beijing-Tianjin-Hebei (BTH) Region: Progress, Challenges and Opportunities",
+    "authors": [
+      "Li Wang",
+      "Fengying Zhang",
+      "Eva Pilot",
+      "Jie Yu",
+      "Chengjing Nie",
+      "Jennifer Holdaway",
+      "Linsheng Yang",
+      "Yonghua Li",
+      "Wuyi Wang",
+      "Sotiris Vardoulakis",
+      "Thomas Krafft"
+    ],
+    "year": 2018,
+    "journal": "International Journal of Environmental Research and Public Health",
+    "doi_or_url": "https://doi.org/10.3390/ijerph15020306",
+    "citation_count": 146,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2112665507",
+    "title": "The variable expression of future tense in Peninsular Spanish: The present (and future) of inflectional forms in the Spanish spoken in a bilingual region",
+    "authors": [
+      "Jos\u00e9 Luis \u0301Blas Arroyo"
+    ],
+    "year": 2008,
+    "journal": "Language Variation and Change",
+    "doi_or_url": "https://doi.org/10.1017/s095439450800001x",
+    "citation_count": 146,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2051001825",
+    "title": "Impulsive Action but Not Impulsive Choice Determines Problem Gambling Severity",
+    "authors": [
+      "Damien Brevers",
+      "Axel Cleeremans",
+      "Frederick Verbruggen",
+      "Antoine Bechara",
+      "Charles Kornreich",
+      "Paul Verbanck",
+      "Xavier No\u00ebl"
+    ],
+    "year": 2012,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0050647",
+    "citation_count": 140,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2758137824",
+    "title": "Induction and Relief of Curiosity Elicit Parietal and Frontal Activity",
+    "authors": [
+      "Lieke van Lieshout",
+      "Annelinde R. E. Vandenbroucke",
+      "N. M\u00fcller",
+      "Roshan Cools",
+      "Floris P. de Lange"
+    ],
+    "year": 2018,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.2816-17.2018",
+    "citation_count": 138,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2129544379",
+    "title": "From Bad to Worse: Striatal Coding of the Relative Value of Painful Decisions",
+    "authors": [
+      "Andrew M. Brooks",
+      "V. S. Chandrasekhar Pammi",
+      "Charles Noussair",
+      "C. M\u00f3nica Capra",
+      "Jan B. Engelmann",
+      "Gregory S. Berns"
+    ],
+    "year": 2010,
+    "journal": "Frontiers in Neuroscience",
+    "doi_or_url": "https://doi.org/10.3389/fnins.2010.00176",
+    "citation_count": 135,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2064501602",
+    "title": "Are Efficiency and Equity in School Finance Substitutes or Complements?",
+    "authors": [
+      "Caroline Hoxby"
+    ],
+    "year": 1996,
+    "journal": "The Journal of Economic Perspectives",
+    "doi_or_url": "https://doi.org/10.1257/jep.10.4.51",
+    "citation_count": 132,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1583506863",
+    "title": "Relationship between evolving epileptiform activity and delayed loss of mitochondrial activity after asphyxia measured by near\u2010infrared spectroscopy in preterm fetal sheep",
+    "authors": [
+      "Laura Bennet",
+      "Vincent Roelfsema",
+      "Praneeti Pathipati",
+      "Josine Quaedackers",
+      "Alistair J. Gunn"
+    ],
+    "year": 2006,
+    "journal": "The Journal of Physiology",
+    "doi_or_url": "https://doi.org/10.1113/jphysiol.2006.105197",
+    "citation_count": 131,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3014393611",
+    "title": "Virtual reality as a tool for environmental conservation and fundraising",
+    "authors": [
+      "Katherine Nelson",
+      "Eva Anggraini",
+      "Achim Schl\u00fcter"
+    ],
+    "year": 2020,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0223631",
+    "citation_count": 130,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2014091548",
+    "title": "Differential community effects on perception and use of urban greenspaces",
+    "authors": [
+      "Alex Y. Lo",
+      "C.Y. Jim"
+    ],
+    "year": 2010,
+    "journal": "Cities",
+    "doi_or_url": "https://doi.org/10.1016/j.cities.2010.07.001",
+    "citation_count": 130,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3118958215",
+    "title": "Exploring How Older Adults Use a Smart Speaker\u2013Based Voice Assistant in Their First Interactions: Qualitative Study",
+    "authors": [
+      "Sunyoung Kim"
+    ],
+    "year": 2020,
+    "journal": "JMIR mhealth and uhealth",
+    "doi_or_url": "https://doi.org/10.2196/20427",
+    "citation_count": 130,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3121633381",
+    "title": "Neural Evidence of Regret and Its Implications for Investor Behavior",
+    "authors": [
+      "Cary Frydman",
+      "Colin F. Camerer"
+    ],
+    "year": 2016,
+    "journal": "Review of Financial Studies",
+    "doi_or_url": "https://doi.org/10.1093/rfs/hhw010",
+    "citation_count": 128,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1622738403",
+    "title": "Responsibility effects in decision making under risk",
+    "authors": [
+      "Julius Pahlke",
+      "Sebastian Strasser",
+      "Ferdinand M. Vieider"
+    ],
+    "year": 2015,
+    "journal": "Journal of Risk and Uncertainty",
+    "doi_or_url": "https://doi.org/10.1007/s11166-015-9223-6",
+    "citation_count": 128,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1929031443",
+    "title": "Social psychological perspectives on the legitimation of social inequality: Past, present and future",
+    "authors": [
+      "Rui Costa\u2010Lopes",
+      "John F. Dovidio",
+      "C\u00edcero Roberto Pereira",
+      "John T. Jost"
+    ],
+    "year": 2013,
+    "journal": "European Journal of Social Psychology",
+    "doi_or_url": "https://doi.org/10.1002/ejsp.1966",
+    "citation_count": 127,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W905992588",
+    "title": "Cortisol and testosterone increase financial risk taking and may destabilize markets",
+    "authors": [
+      "Carlos Cueva",
+      "Ed Roberts",
+      "Thomas Spencer",
+      "Nisha Rani",
+      "Michelle Tempest",
+      "Philippe N. Tobler",
+      "J. Herbert",
+      "Aldo Rustichini"
+    ],
+    "year": 2015,
+    "journal": "Scientific Reports",
+    "doi_or_url": "https://doi.org/10.1038/srep11206",
+    "citation_count": 126,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2338155759",
+    "title": "Write, draw, show, and tell: a child-centred dual methodology to explore perceptions of out-of-school physical activity",
+    "authors": [
+      "Robert J. Noonan",
+      "Lynne M. Boddy",
+      "Stuart J. Fairclough",
+      "Z\u00f6e Knowles"
+    ],
+    "year": 2016,
+    "journal": "BMC Public Health",
+    "doi_or_url": "https://doi.org/10.1186/s12889-016-3005-1",
+    "citation_count": 126,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4293162429",
+    "title": "The effects of tourism e-commerce live streaming features on consumer purchase intention: The mediating roles of flow experience and trust",
+    "authors": [
+      "Xiaoli Liu",
+      "Lei Zhang",
+      "Qian Chen"
+    ],
+    "year": 2022,
+    "journal": "Frontiers in Psychology",
+    "doi_or_url": "https://doi.org/10.3389/fpsyg.2022.995129",
+    "citation_count": 124,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2079432078",
+    "title": "Early Adolescent Empathy, Parental Support, and Antisocial Behavior",
+    "authors": [
+      "Raymond A. T. de Kemp",
+      "Geertjan Overbeek",
+      "Minet de Wied",
+      "Rutger C. M. E. Engels",
+      "Ron H. J. Scholte"
+    ],
+    "year": 2007,
+    "journal": "The Journal of Genetic Psychology",
+    "doi_or_url": "https://doi.org/10.3200/gntp.168.1.5-18",
+    "citation_count": 123,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2911755007",
+    "title": "Volunteer computing",
+    "authors": [
+      "Luis F. G. Sarmenta",
+      "Stephen A. Ward"
+    ],
+    "year": 2001,
+    "journal": "DSpace@MIT (Massachusetts Institute of Technology)",
+    "doi_or_url": "https://openalex.org/W2911755007",
+    "citation_count": 122,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2403072096",
+    "title": "Marketing to Youth in the Digital Age: The Promotion of Unhealthy Products and Health Promoting Behaviours on Social Media",
+    "authors": [
+      "Sally Dunlop",
+      "Becky Freeman",
+      "Sandra C. Jones"
+    ],
+    "year": 2016,
+    "journal": "Media and Communication",
+    "doi_or_url": "https://doi.org/10.17645/mac.v4i3.522",
+    "citation_count": 121,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2901004383",
+    "title": "Disentangling Risk and Uncertainty: When Risk-Taking Measures Are Not About Risk",
+    "authors": [
+      "Kristel De Groot",
+      "Roy Thurik"
+    ],
+    "year": 2018,
+    "journal": "Frontiers in Psychology",
+    "doi_or_url": "https://doi.org/10.3389/fpsyg.2018.02194",
+    "citation_count": 121,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2734700351",
+    "title": "Why Do Defaults Affect Behavior? Experimental Evidence from Afghanistan",
+    "authors": [
+      "Joshua Blumenstock",
+      "Michael Callen",
+      "Tarek Ghani"
+    ],
+    "year": 2018,
+    "journal": "American Economic Review",
+    "doi_or_url": "https://doi.org/10.1257/aer.20171676",
+    "citation_count": 118,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2140531843",
+    "title": "Cerebral Correlates of Salient Prediction Error for Different Rewards and Punishments",
+    "authors": [
+      "\u00c9lise M\u00e9t\u00e9reau",
+      "Jean\u2010Claude Dreher"
+    ],
+    "year": 2012,
+    "journal": "Cerebral Cortex",
+    "doi_or_url": "https://doi.org/10.1093/cercor/bhs037",
+    "citation_count": 117,
+    "is_high_impact": true,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2607705486",
+    "title": "The efficacy of the Friendly Attac serious digital game to promote prosocial bystander behavior in cyberbullying among young adolescents: A cluster-randomized controlled trial",
+    "authors": [
+      "Ann DeSmet",
+      "Sara Bastiaensens",
+      "Katrien Van Cleemput",
+      "Karolien Poels",
+      "Heidi Vandebosch",
+      "Gie Deboutte",
+      "Laura Herrewijn",
+      "Steven Malliet",
+      "Sara Pabian",
+      "Frederik Van Broeckhoven",
+      "Olga De Troyer",
+      "Ga\u00e9tan Deglorie"
+    ],
+    "year": 2017,
+    "journal": "Computers in Human Behavior",
+    "doi_or_url": "https://doi.org/10.1016/j.chb.2017.10.011",
+    "citation_count": 117,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2951830804",
+    "title": "Predictors of teenage pregnancy among girls aged 13\u201319\u2009years in Uganda: a community based case-control study",
+    "authors": [
+      "Anthony Mark Ochen",
+      "Primus Che",
+      "Stephen Lawoko"
+    ],
+    "year": 2019,
+    "journal": "BMC Pregnancy and Childbirth",
+    "doi_or_url": "https://doi.org/10.1186/s12884-019-2347-y",
+    "citation_count": 116,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2010816858",
+    "title": "Labor Demand, Labor Supply, and Employment Volatility",
+    "authors": [
+      "Robert E. Hall"
+    ],
+    "year": 1991,
+    "journal": "NBER Macroeconomics Annual",
+    "doi_or_url": "https://doi.org/10.1086/654155",
+    "citation_count": 116,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2778984829",
+    "title": "The Flexibility of Fertility Preferences in a Context of Uncertainty",
+    "authors": [
+      "Jenny Trinitapoli",
+      "Sara Yeatman"
+    ],
+    "year": 2017,
+    "journal": "Population and Development Review",
+    "doi_or_url": "https://doi.org/10.1111/padr.12114",
+    "citation_count": 116,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4324374807",
+    "title": "Battling bots: Experiences and strategies to mitigate fraudulent responses in online surveys",
+    "authors": [
+      "Brittney K. Goodrich",
+      "Marieke Fenton",
+      "Jerrod Penn",
+      "John Bovay",
+      "Travis P. Mountain"
+    ],
+    "year": 2023,
+    "journal": "Applied Economic Perspectives and Policy",
+    "doi_or_url": "https://doi.org/10.1002/aepp.13353",
+    "citation_count": 114,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2024690164",
+    "title": "The Known Unknowns: Neural Representation of Second-Order Uncertainty, and Ambiguity",
+    "authors": [
+      "Dominik R. Bach",
+      "Oliver J. Hulme",
+      "W.D. Penny",
+      "Raymond J. Dolan"
+    ],
+    "year": 2011,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.1452-10.2011",
+    "citation_count": 113,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4200046382",
+    "title": "Asymmetric Attention",
+    "authors": [
+      "Alexandre Kohlhas",
+      "Ansgar Walther"
+    ],
+    "year": 2021,
+    "journal": "American Economic Review",
+    "doi_or_url": "https://doi.org/10.1257/aer.20191432",
+    "citation_count": 111,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1993429504",
+    "title": "Responding to tokenism: individual action in the face of collective injustice",
+    "authors": [
+      "Stephen C. Wright",
+      "Donald M. Taylor"
+    ],
+    "year": 1998,
+    "journal": "European Journal of Social Psychology",
+    "doi_or_url": "https://doi.org/10.1002/(sici)1099-0992(199807/08)28:4<647::aid-ejsp887>3.0.co;2-0",
+    "citation_count": 110,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2150472214",
+    "title": "The Mode of Action of Spatial Repellents and Their Impact on Vectorial Capacity of Anopheles gambiae sensu stricto",
+    "authors": [
+      "Sheila B. Ogoma",
+      "Hassan Ngonyani",
+      "Emmanuel Simfukwe",
+      "Antony Pius Mseka",
+      "Sarah Moore",
+      "Marta F. Maia",
+      "Sarah Moore",
+      "Lena M. Lorenz"
+    ],
+    "year": 2014,
+    "journal": "PLoS ONE",
+    "doi_or_url": "https://doi.org/10.1371/journal.pone.0110433",
+    "citation_count": 109,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W1554685869",
+    "title": "The Telecommunications Act of 1996",
+    "authors": [
+      "Thomas G. Krattenmaker"
+    ],
+    "year": 1996,
+    "journal": "The William & Mary Law School Scholarship Repository (William & Mary)",
+    "doi_or_url": "https://openalex.org/W1554685869",
+    "citation_count": 109,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W4281969102",
+    "title": "Conviction Narrative Theory: A theory of choice under radical uncertainty",
+    "authors": [
+      "Samuel G. B. Johnson",
+      "Avri Bilovich",
+      "David Tuckett"
+    ],
+    "year": 2022,
+    "journal": "Behavioral and Brain Sciences",
+    "doi_or_url": "https://doi.org/10.1017/s0140525x22001157",
+    "citation_count": 108,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2981259065",
+    "title": "Internet Gambling: An Overview of Psychosocial Impacts",
+    "authors": [
+      "Mark D. Griffiths",
+      "Adrian Parke",
+      "Richard T. A. Wood",
+      "Jonathan Parke"
+    ],
+    "year": 2012,
+    "journal": "UNLV Gaming Research & Review Journal",
+    "doi_or_url": "https://doi.org/10.9741/2327-8455.1149",
+    "citation_count": 108,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2735993447",
+    "title": "Explanation-based learning in infancy",
+    "authors": [
+      "Ren\u00e9e Baillargeon",
+      "Gerald DeJong"
+    ],
+    "year": 2017,
+    "journal": "Psychonomic Bulletin & Review",
+    "doi_or_url": "https://doi.org/10.3758/s13423-017-1334-4",
+    "citation_count": 108,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2010423218",
+    "title": "Chronic exposure to a gambling-like schedule of reward predictive stimuli can promote sensitization to amphetamine in rats",
+    "authors": [
+      "Martin Zack",
+      "Robert E. Featherstone",
+      "Sarah Ann Mathewson",
+      "Paul Fletcher"
+    ],
+    "year": 2014,
+    "journal": "Frontiers in Behavioral Neuroscience",
+    "doi_or_url": "https://doi.org/10.3389/fnbeh.2014.00036",
+    "citation_count": 107,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2985581529",
+    "title": "Interactive soundscape augmentation by natural sounds in a noise polluted urban park",
+    "authors": [
+      "Timothy Van Renterghem",
+      "Kris Vanhecke",
+      "Karlo Filipan",
+      "kang ki sun",
+      "Toon De Pessemier",
+      "Bert De Coensel",
+      "Wout Joseph",
+      "Dick Botteldooren"
+    ],
+    "year": 2019,
+    "journal": "Landscape and Urban Planning",
+    "doi_or_url": "https://doi.org/10.1016/j.landurbplan.2019.103705",
+    "citation_count": 107,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W202461531",
+    "title": "Do apes read minds?: toward a new folk psychology",
+    "authors": [
+      "Kristin Andrews"
+    ],
+    "year": 2013,
+    "journal": "Choice Reviews Online",
+    "doi_or_url": "https://doi.org/10.5860/choice.50-3188",
+    "citation_count": 107,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2932216334",
+    "title": "The language of well-being: Tracking fluctuations in emotion experience through everyday speech.",
+    "authors": [
+      "Jessie Sun",
+      "H. Andrew Schwartz",
+      "Youngseo Son",
+      "Margaret L. Kern",
+      "Simine Vazire"
+    ],
+    "year": 2019,
+    "journal": "Journal of Personality and Social Psychology",
+    "doi_or_url": "https://doi.org/10.1037/pspp0000244",
+    "citation_count": 106,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W3125871527",
+    "title": "Improving Investment Decisions with Simulated Experience",
+    "authors": [
+      "Meike Bradbury",
+      "Thorsten Hens",
+      "Stefan Zeisberger"
+    ],
+    "year": 2014,
+    "journal": "European Finance Review",
+    "doi_or_url": "https://doi.org/10.1093/rof/rfu021",
+    "citation_count": 106,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2527837748",
+    "title": "\u2018It's unbelievably humiliating\u2019\u2014Patients' expressions of negative effects of coercion in mental health care",
+    "authors": [
+      "Olav Nyttingnes",
+      "Torleif Ruud",
+      "Jorun Rugk\u00e5sa"
+    ],
+    "year": 2016,
+    "journal": "International Journal of Law and Psychiatry",
+    "doi_or_url": "https://doi.org/10.1016/j.ijlp.2016.08.009",
+    "citation_count": 106,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2807091765",
+    "title": "Introducing the new paradigm of Social Dispersed Computing: Applications, Technologies and Challenges",
+    "authors": [
+      "Marisol Garc\u00eda\u2010Valls",
+      "Abhishek Dubey",
+      "Vicente Botti"
+    ],
+    "year": 2018,
+    "journal": "Journal of Systems Architecture",
+    "doi_or_url": "https://doi.org/10.1016/j.sysarc.2018.05.007",
+    "citation_count": 105,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2343074166",
+    "title": "Human Capital and Education: The State of the Art in the Economics of Education",
+    "authors": [
+      "Simon Burgess"
+    ],
+    "year": 2016,
+    "journal": "SSRN Electronic Journal",
+    "doi_or_url": "https://doi.org/10.2139/ssrn.2769193",
+    "citation_count": 104,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2168265041",
+    "title": "Anticipatory Anxiety Disrupts Neural Valuation during Risky Choice",
+    "authors": [
+      "Jan B. Engelmann",
+      "Friederike Meyer",
+      "Ernst Fehr",
+      "Christian C. Ruff"
+    ],
+    "year": 2015,
+    "journal": "Journal of Neuroscience",
+    "doi_or_url": "https://doi.org/10.1523/jneurosci.2880-14.2015",
+    "citation_count": 103,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  },
+  {
+    "id": "W2560240982",
+    "title": "Drug use and health behaviour among German men who have sex with men: Results of a qualitative, multi-centre study",
+    "authors": [
+      "Daniel Deimel",
+      "Heino St\u00f6ver",
+      "Susann H\u00f6\u00dfelbarth",
+      "Anna Dichtl",
+      "Niels Graf",
+      "Viola Gebhardt"
+    ],
+    "year": 2016,
+    "journal": "Harm Reduction Journal",
+    "doi_or_url": "https://doi.org/10.1186/s12954-016-0125-y",
+    "citation_count": 102,
+    "is_high_impact": false,
+    "open_access": true,
+    "used_for": [
+      "task_workflow",
+      "timing_parameters"
+    ],
+    "parameter_bindings": {},
+    "notes": ""
+  }
+]
