@@ -1,21 +1,7 @@
 from __future__ import annotations
-
 from functools import partial
 from typing import Any
-
-from psyflow import StimUnit, set_trial_context
-
-
-def _deadline_s(value: Any) -> float | None:
-    if isinstance(value, (int, float)):
-        return float(value)
-    if isinstance(value, (list, tuple)) and value:
-        try:
-            return float(max(value))
-        except Exception:
-            return None
-    return None
-
+from psyflow import StimUnit, set_trial_context, next_trial_id
 
 def _parse_condition(condition: Any) -> dict[str, Any]:
     if isinstance(condition, tuple) and len(condition) >= 9:
@@ -81,7 +67,7 @@ def run_trial(
     """Run a single passive lottery trial (no in-trial key press required)."""
     parsed = _parse_condition(condition)
     block_idx_val = int(block_idx) if block_idx is not None else 0
-    trial_id = int(len(controller.histories.get(parsed["condition"], [])) + 1)
+    trial_id = next_trial_id()
 
     trial_data = {
         "trial_id": int(parsed["trial_index"]) if parsed["trial_index"] > 0 else int(trial_id),
@@ -96,6 +82,7 @@ def run_trial(
     }
     make_unit = partial(StimUnit, win=win, kb=kb, runtime=trigger_runtime)
 
+    cue_dur = float(getattr(settings, "condition_cue_duration", getattr(settings, "cue_duration", 0.5)))
     cue = make_unit(unit_label="cue").add_stim(
         stim_bank.get_and_format(
             "condition_cue",
@@ -107,7 +94,7 @@ def run_trial(
         cue,
         trial_id=trial_data["trial_id"],
         phase="offer_cue",
-        deadline_s=_deadline_s(settings.cue_duration),
+        deadline_s=cue_dur,
         valid_keys=[],
         block_id=trial_data["block_id"],
         condition_id=parsed["condition_id"],
@@ -120,16 +107,17 @@ def run_trial(
         stim_id="condition_cue",
     )
     cue.show(
-        duration=settings.cue_duration,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_cue_onset"),
+        duration=cue_dur,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_cue_onset") or settings.triggers.get(f"{parsed['condition']}_condition_cue_onset"),
     ).to_dict(trial_data)
 
+    anticip_dur = float(getattr(settings, "pre_lottery_fixation_duration", getattr(settings, "anticipation_duration", 0.5)))
     anticipation = make_unit(unit_label="anticipation").add_stim(stim_bank.get("fixation"))
     set_trial_context(
         anticipation,
         trial_id=trial_data["trial_id"],
         phase="pre_lottery_fixation",
-        deadline_s=_deadline_s(settings.anticipation_duration),
+        deadline_s=anticip_dur,
         valid_keys=[],
         block_id=trial_data["block_id"],
         condition_id=parsed["condition_id"],
@@ -141,10 +129,11 @@ def run_trial(
         stim_id="fixation",
     )
     anticipation.show(
-        duration=settings.anticipation_duration,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_anticipation_onset"),
+        duration=anticip_dur,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_anticipation_onset") or settings.triggers.get(f"{parsed['condition']}_pre_lottery_fixation_onset"),
     ).to_dict(trial_data)
 
+    lottery_dur = float(getattr(settings, "lottery_reveal_duration", getattr(settings, "lottery_duration", 0.5)))
     target = make_unit(unit_label="target").add_stim(
         stim_bank.get_and_format(
             "lottery_offer",
@@ -158,7 +147,7 @@ def run_trial(
         target,
         trial_id=trial_data["trial_id"],
         phase="lottery_reveal",
-        deadline_s=_deadline_s(settings.lottery_duration),
+        deadline_s=lottery_dur,
         valid_keys=[],
         block_id=trial_data["block_id"],
         condition_id=parsed["condition_id"],
@@ -174,8 +163,8 @@ def run_trial(
     )
     target.capture_response(
         keys=[],
-        duration=settings.lottery_duration,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_lottery_onset"),
+        duration=lottery_dur,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_lottery_onset") or settings.triggers.get(f"{parsed['condition']}_lottery_reveal_onset"),
         terminate_on_response=False,
     )
     target.to_dict(trial_data)
@@ -190,6 +179,7 @@ def run_trial(
         outcome_kind=outcome_kind,
     )
 
+    feedback_dur = float(getattr(settings, "outcome_feedback_duration", getattr(settings, "feedback_duration", 0.5)))
     outcome_unit_name = f"outcome_{outcome_kind}"
     feedback = make_unit(unit_label="feedback").add_stim(
         stim_bank.get_and_format(
@@ -202,7 +192,7 @@ def run_trial(
         feedback,
         trial_id=trial_data["trial_id"],
         phase="outcome_feedback",
-        deadline_s=_deadline_s(settings.feedback_duration),
+        deadline_s=feedback_dur,
         valid_keys=[],
         block_id=trial_data["block_id"],
         condition_id=parsed["condition_id"],
@@ -217,23 +207,24 @@ def run_trial(
         stim_id=outcome_unit_name,
     )
     feedback.show(
-        duration=settings.feedback_duration,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_{outcome_kind}_outcome_onset"),
+        duration=feedback_dur,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_{outcome_kind}_outcome_onset") or settings.triggers.get(f"{parsed['condition']}_{outcome_kind}_outcome_feedback_onset"),
     ).to_dict(trial_data)
 
+    iti_dur = float(getattr(settings, "iti_duration", 0.6))
     iti = make_unit(unit_label="iti").add_stim(stim_bank.get("fixation"))
     set_trial_context(
         iti,
         trial_id=trial_data["trial_id"],
-        phase="inter_trial_interval",
-        deadline_s=_deadline_s(settings.iti_duration),
+        phase="iti",
+        deadline_s=iti_dur,
         valid_keys=[],
         block_id=trial_data["block_id"],
         condition_id=parsed["condition_id"],
-        task_factors={"stage": "inter_trial_interval", "block_idx": block_idx_val},
+        task_factors={"stage": "iti", "block_idx": block_idx_val},
         stim_id="fixation",
     )
-    iti.show(duration=settings.iti_duration, onset_trigger=settings.triggers.get("iti_onset")).to_dict(trial_data)
+    iti.show(duration=iti_dur, onset_trigger=settings.triggers.get("iti_onset")).to_dict(trial_data)
 
     trial_data["outcome_kind"] = outcome_kind
     trial_data["outcome_value"] = outcome_value

@@ -52,10 +52,10 @@ task:
   voice_name: zh-CN-YunyangNeural
   voice_enabled: false
 timing:
-  cue_duration: 0.6
-  anticipation_duration: 1.2
-  lottery_duration: 1.5
-  feedback_duration: 1.0
+  condition_cue_duration: 0.6
+  pre_lottery_fixation_duration: 1.2
+  lottery_reveal_duration: 1.5
+  outcome_feedback_duration: 1.0
   iti_duration: 0.8
 stimuli:
   fixation:
@@ -177,24 +177,24 @@ triggers:
     exp_end: 2
     block_onset: 10
     block_end: 11
-    gain_cue_onset: 20
-    loss_cue_onset: 21
-    mixed_cue_onset: 22
-    gain_anticipation_onset: 30
-    loss_anticipation_onset: 31
-    mixed_anticipation_onset: 32
-    gain_lottery_onset: 40
-    loss_lottery_onset: 41
-    mixed_lottery_onset: 42
-    gain_win_outcome_onset: 50
-    gain_neutral_outcome_onset: 51
-    gain_loss_outcome_onset: 52
-    loss_win_outcome_onset: 53
-    loss_neutral_outcome_onset: 54
-    loss_loss_outcome_onset: 55
-    mixed_win_outcome_onset: 56
-    mixed_neutral_outcome_onset: 57
-    mixed_loss_outcome_onset: 58
+    gain_condition_cue_onset: 20
+    loss_condition_cue_onset: 21
+    mixed_condition_cue_onset: 22
+    gain_pre_lottery_fixation_onset: 30
+    loss_pre_lottery_fixation_onset: 31
+    mixed_pre_lottery_fixation_onset: 32
+    gain_lottery_reveal_onset: 40
+    loss_lottery_reveal_onset: 41
+    mixed_lottery_reveal_onset: 42
+    gain_win_outcome_feedback_onset: 50
+    gain_neutral_outcome_feedback_onset: 51
+    gain_loss_outcome_feedback_onset: 52
+    loss_win_outcome_feedback_onset: 53
+    loss_neutral_outcome_feedback_onset: 54
+    loss_loss_outcome_feedback_onset: 55
+    mixed_win_outcome_feedback_onset: 56
+    mixed_neutral_outcome_feedback_onset: 57
+    mixed_loss_outcome_feedback_onset: 58
     iti_onset: 60
   driver:
     type: serial_url

@@ -22,31 +22,31 @@
 
 ### Trial State Machine
 
-1. `offer_cue`
-   - Onset trigger: `{condition}_cue_onset` (`20/21/22`).
+1. `condition_cue`
+   - Onset trigger: `{condition}_condition_cue_onset` (`20/21/22`; fallback-compatible with `{condition}_cue_onset`).
    - Stimulus shown: `condition_cue` text with condition-specific label.
    - Valid keys: none.
-   - Timeout behavior: fixed `timing.cue_duration`, then auto-advance.
+   - Timeout behavior: fixed `timing.condition_cue_duration` (fallback-compatible with `timing.cue_duration`), then auto-advance.
    - Next state: `pre_lottery_fixation`.
 2. `pre_lottery_fixation`
-   - Onset trigger: `{condition}_anticipation_onset` (`30/31/32`).
+   - Onset trigger: `{condition}_pre_lottery_fixation_onset` (`30/31/32`; fallback-compatible with `{condition}_anticipation_onset`).
    - Stimulus shown: `fixation` (`+`).
    - Valid keys: none.
-   - Timeout behavior: fixed `timing.anticipation_duration`, then auto-advance.
+   - Timeout behavior: fixed `timing.pre_lottery_fixation_duration` (fallback-compatible with `timing.anticipation_duration`), then auto-advance.
    - Next state: `lottery_reveal`.
 3. `lottery_reveal`
-   - Onset trigger: `{condition}_lottery_onset` (`40/41/42`).
+   - Onset trigger: `{condition}_lottery_reveal_onset` (`40/41/42`; fallback-compatible with `{condition}_lottery_onset`).
    - Stimulus shown: `lottery_offer` with probability and two outcomes.
    - Valid keys: none (`capture_response(keys=[])` for passive timing trace only).
-   - Timeout behavior: fixed `timing.lottery_duration`, then auto-advance.
+   - Timeout behavior: fixed `timing.lottery_reveal_duration` (fallback-compatible with `timing.lottery_duration`), then auto-advance.
    - Next state: `outcome_feedback`.
 4. `outcome_feedback`
-   - Onset trigger: `{condition}_{outcome_kind}_outcome_onset` (`50-58`).
+   - Onset trigger: `{condition}_{outcome_kind}_outcome_feedback_onset` (`50-58`; fallback-compatible with `{condition}_{outcome_kind}_outcome_onset`).
    - Stimulus shown: `outcome_win` or `outcome_neutral` or `outcome_loss`.
    - Valid keys: none.
-   - Timeout behavior: fixed `timing.feedback_duration`, then auto-advance.
-   - Next state: `inter_trial_interval`.
-5. `inter_trial_interval`
+   - Timeout behavior: fixed `timing.outcome_feedback_duration` (fallback-compatible with `timing.feedback_duration`), then auto-advance.
+   - Next state: `iti`.
+5. `iti`
    - Onset trigger: `iti_onset` (`60`).
    - Stimulus shown: `fixation`.
    - Valid keys: none.
@@ -130,10 +130,10 @@ There are no screens with multiple simultaneous choice options in this passive d
 | `exp_end` | 2 | Experiment end |
 | `block_onset` | 10 | Block start |
 | `block_end` | 11 | Block end |
-| `gain_cue_onset` / `loss_cue_onset` / `mixed_cue_onset` | 20/21/22 | Cue onset by condition |
-| `gain_anticipation_onset` / `loss_anticipation_onset` / `mixed_anticipation_onset` | 30/31/32 | Anticipation fixation onset by condition |
-| `gain_lottery_onset` / `loss_lottery_onset` / `mixed_lottery_onset` | 40/41/42 | Lottery reveal onset by condition |
-| `gain_win_outcome_onset` ... `mixed_loss_outcome_onset` | 50-58 | Outcome feedback onset by condition and valence |
+| `gain_condition_cue_onset` / `loss_condition_cue_onset` / `mixed_condition_cue_onset` | 20/21/22 | Cue onset by condition |
+| `gain_pre_lottery_fixation_onset` / `loss_pre_lottery_fixation_onset` / `mixed_pre_lottery_fixation_onset` | 30/31/32 | Anticipation fixation onset by condition |
+| `gain_lottery_reveal_onset` / `loss_lottery_reveal_onset` / `mixed_lottery_reveal_onset` | 40/41/42 | Lottery reveal onset by condition |
+| `gain_win_outcome_feedback_onset` ... `mixed_loss_outcome_feedback_onset` | 50-58 | Outcome feedback onset by condition and valence |
 | `iti_onset` | 60 | ITI fixation onset |
 
 ## 7. Inference Log
@@ -147,3 +147,6 @@ There are no screens with multiple simultaneous choice options in this passive d
 - Decision: keep participant-facing language as Chinese with `SimHei`.
   - Why inference was required: publication protocols are language-agnostic, but deployment target requires localized instructions.
   - Citation-supported rationale: localization preserves task structure without changing trial logic or valence mapping.
+- Decision: runtime unit labels and exported columns use passive-lottery phase names (`condition_cue_*`, `pre_lottery_fixation_*`, `lottery_reveal_*`, `outcome_feedback_*`, `iti_*`) instead of template residue (`cue_*`, `anticipation_*`, `target_*`, `feedback_*`).
+  - Why inference was required: this is an implementation contract decision, not a paradigm manipulation.
+  - Citation-supported rationale: improves traceability from literature-defined phases to runtime artifacts without changing paradigm logic.

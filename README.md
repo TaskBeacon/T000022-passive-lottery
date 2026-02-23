@@ -5,11 +5,11 @@
 | Field | Value |
 |---|---|
 | Name | Passive Lottery Task |
-| Version | v0.2.1-dev |
+| Version | v0.2.2-dev |
 | URL / Repository | https://github.com/TaskBeacon/T000022-passive-lottery |
 | Short Description | Passive observation task for gain/loss/mixed lottery outcomes with deterministic profile-driven sampling. |
 | Created By | TaskBeacon |
-| Date Updated | 2026-02-18 |
+| Date Updated | 2026-02-19 |
 | PsyFlow Version | 0.1.9 |
 | PsychoPy Version | 2025.1.1 |
 | Modality | Behavior |
@@ -34,7 +34,7 @@ In this task, participants passively observe lottery cues, offer displays, and o
 
 | Step | Description |
 |---|---|
-| Offer cue | Condition cue (gain/loss/mixed) is displayed. |
+| Condition cue | Condition cue (gain/loss/mixed) is displayed. |
 | Pre-lottery fixation | Central fixation stage. |
 | Lottery reveal | Trial-specific probability and outcomes are shown. |
 | Outcome feedback | Realized outcome and cumulative score are shown. |
@@ -52,11 +52,11 @@ In this task, participants passively observe lottery cues, offer displays, and o
 
 | Phase Label | Meaning |
 |---|---|
-| `offer_cue` | Condition cue stage. |
+| `condition_cue` | Condition cue stage. |
 | `pre_lottery_fixation` | Pre-offer fixation stage. |
 | `lottery_reveal` | Lottery information display stage. |
 | `outcome_feedback` | Outcome feedback stage. |
-| `inter_trial_interval` | ITI stage. |
+| `iti` | ITI stage. |
 
 ## 3. Configuration Summary
 
@@ -92,10 +92,10 @@ In this task, participants passively observe lottery cues, offer displays, and o
 
 | Phase | Duration |
 |---|---|
-| cue | 0.6 s |
-| anticipation | 1.2 s |
-| lottery | 1.5 s |
-| feedback | 1.0 s |
+| condition_cue | 0.6 s |
+| pre_lottery_fixation | 1.2 s |
+| lottery_reveal | 1.5 s |
+| outcome_feedback | 1.0 s |
 | iti | 0.8 s |
 
 ### e. Triggers
@@ -104,8 +104,8 @@ In this task, participants passively observe lottery cues, offer displays, and o
 |---|---|
 | Experiment | `exp_onset=1`, `exp_end=2` |
 | Block | `block_onset=10`, `block_end=11` |
-| Cue by condition | `gain/loss/mixed: 20/21/22` |
-| Anticipation by condition | `gain/loss/mixed: 30/31/32` |
+| Condition cue by condition | `gain/loss/mixed: 20/21/22` |
+| Pre-lottery fixation by condition | `gain/loss/mixed: 30/31/32` |
 | Lottery reveal by condition | `gain/loss/mixed: 40/41/42` |
 | Outcome feedback by condition x valence | `50-58` |
 | Inter-trial interval | `iti_onset=60` |
