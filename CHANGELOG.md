@@ -5,6 +5,10 @@
 ### Changed
 - Refactored `src/run_trial.py` to eliminate local duration scaling and trial ID boilerplate, using `psyflow` native `next_trial_id()`.
 - Standardized ITI phase naming to `iti` instead of `inter_trial_interval`.
+- Replaced the generic task controller with `condition_generation`-driven preplanned trial tuples and a lightweight `ScoreTracker`.
+- Refactored `main.py` to use `BlockUnit.generate_conditions(func=...)` for passive-lottery scheduling/outcome preplanning.
+- Removed legacy trigger/timing fallback lookups and template-style runtime unit labels from `src/run_trial.py`.
+- Renamed top-level config section `controller` -> `condition_generation` in all profiles and updated docs/audit references.
 
 ## [0.2.2-dev] - 2026-02-19
 
@@ -24,7 +28,7 @@
 - Rebuilt `references/task_logic_audit.md` with a complete, non-placeholder state machine, explicit trigger mapping, layout plan, and inference log.
 - Curated literature selection to a task-relevant subset and regenerated `references/references.yaml` plus `references/references.md`.
 - Updated `references/stimulus_mapping.md` to map implemented stimulus IDs (`condition_cue`, `lottery_offer`, `outcome_*`, `fixation`) instead of abstract cue/target placeholders.
-- Aligned `README.md` metadata and configuration summary with the implemented Chinese profile, trigger schema, and lottery controller parameters.
+- Aligned `README.md` metadata and configuration summary with the implemented Chinese profile, trigger schema, and lottery profile parameters.
 
 ## [0.2.0-dev] - 2026-02-18
 

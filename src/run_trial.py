@@ -1,7 +1,10 @@
 from __future__ import annotations
+
 from functools import partial
 from typing import Any
-from psyflow import StimUnit, set_trial_context, next_trial_id
+
+from psyflow import StimUnit, next_trial_id, set_trial_context
+
 
 def _parse_condition(condition: Any) -> dict[str, Any]:
     if isinstance(condition, tuple) and len(condition) >= 9:
@@ -40,17 +43,7 @@ def _parse_condition(condition: Any) -> dict[str, Any]:
             "condition_id": str(condition.get("condition_id", "unknown")),
             "trial_index": int(condition.get("trial_index", 0)),
         }
-    return {
-        "condition": str(condition),
-        "condition_label": str(condition),
-        "prob_a": 0.5,
-        "outcome_a": 0,
-        "outcome_b": 0,
-        "outcome_value": 0,
-        "outcome_kind": "neutral",
-        "condition_id": str(condition),
-        "trial_index": 0,
-    }
+    raise ValueError(f"Unsupported passive-lottery condition format: {condition!r}")
 
 
 def run_trial(
@@ -59,19 +52,21 @@ def run_trial(
     settings,
     condition,
     stim_bank,
-    controller,
+    score_tracker,
     trigger_runtime,
     block_id=None,
     block_idx=None,
 ):
-    """Run a single passive lottery trial (no in-trial key press required)."""
+    """Run a single passive-lottery trial (no in-trial participant response)."""
     parsed = _parse_condition(condition)
-    block_idx_val = int(block_idx) if block_idx is not None else 0
     trial_id = next_trial_id()
+    block_idx_val = int(block_idx) if block_idx is not None else 0
+    trial_index = int(parsed["trial_index"]) if int(parsed["trial_index"]) > 0 else int(trial_id)
+    block_id_val = str(block_id) if block_id is not None else "block_0"
 
     trial_data = {
-        "trial_id": int(parsed["trial_index"]) if parsed["trial_index"] > 0 else int(trial_id),
-        "block_id": str(block_id) if block_id is not None else "block_0",
+        "trial_id": trial_index,
+        "block_id": block_id_val,
         "block_idx": block_idx_val,
         "condition": parsed["condition"],
         "condition_id": parsed["condition_id"],
@@ -82,8 +77,8 @@ def run_trial(
     }
     make_unit = partial(StimUnit, win=win, kb=kb, runtime=trigger_runtime)
 
-    cue_dur = float(getattr(settings, "condition_cue_duration", getattr(settings, "cue_duration", 0.5)))
-    cue = make_unit(unit_label="cue").add_stim(
+    condition_cue_duration = float(getattr(settings, "condition_cue_duration", 0.5))
+    condition_cue = make_unit(unit_label="condition_cue").add_stim(
         stim_bank.get_and_format(
             "condition_cue",
             condition_label=parsed["condition_label"],
@@ -91,35 +86,35 @@ def run_trial(
         )
     )
     set_trial_context(
-        cue,
-        trial_id=trial_data["trial_id"],
-        phase="offer_cue",
-        deadline_s=cue_dur,
+        condition_cue,
+        trial_id=trial_index,
+        phase="condition_cue",
+        deadline_s=condition_cue_duration,
         valid_keys=[],
-        block_id=trial_data["block_id"],
+        block_id=block_id_val,
         condition_id=parsed["condition_id"],
         task_factors={
-            "stage": "offer_cue",
+            "stage": "condition_cue",
             "condition": parsed["condition"],
             "condition_label": parsed["condition_label"],
             "block_idx": block_idx_val,
         },
         stim_id="condition_cue",
     )
-    cue.show(
-        duration=cue_dur,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_cue_onset") or settings.triggers.get(f"{parsed['condition']}_condition_cue_onset"),
+    condition_cue.show(
+        duration=condition_cue_duration,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_condition_cue_onset"),
     ).to_dict(trial_data)
 
-    anticip_dur = float(getattr(settings, "pre_lottery_fixation_duration", getattr(settings, "anticipation_duration", 0.5)))
-    anticipation = make_unit(unit_label="anticipation").add_stim(stim_bank.get("fixation"))
+    pre_lottery_fixation_duration = float(getattr(settings, "pre_lottery_fixation_duration", 0.5))
+    pre_lottery_fixation = make_unit(unit_label="pre_lottery_fixation").add_stim(stim_bank.get("fixation"))
     set_trial_context(
-        anticipation,
-        trial_id=trial_data["trial_id"],
+        pre_lottery_fixation,
+        trial_id=trial_index,
         phase="pre_lottery_fixation",
-        deadline_s=anticip_dur,
+        deadline_s=pre_lottery_fixation_duration,
         valid_keys=[],
-        block_id=trial_data["block_id"],
+        block_id=block_id_val,
         condition_id=parsed["condition_id"],
         task_factors={
             "stage": "pre_lottery_fixation",
@@ -128,13 +123,13 @@ def run_trial(
         },
         stim_id="fixation",
     )
-    anticipation.show(
-        duration=anticip_dur,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_anticipation_onset") or settings.triggers.get(f"{parsed['condition']}_pre_lottery_fixation_onset"),
+    pre_lottery_fixation.show(
+        duration=pre_lottery_fixation_duration,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_pre_lottery_fixation_onset"),
     ).to_dict(trial_data)
 
-    lottery_dur = float(getattr(settings, "lottery_reveal_duration", getattr(settings, "lottery_duration", 0.5)))
-    target = make_unit(unit_label="target").add_stim(
+    lottery_reveal_duration = float(getattr(settings, "lottery_reveal_duration", 0.5))
+    lottery_reveal = make_unit(unit_label="lottery_reveal").add_stim(
         stim_bank.get_and_format(
             "lottery_offer",
             prob_a=int(round(parsed["prob_a"] * 100.0)),
@@ -144,12 +139,12 @@ def run_trial(
         )
     )
     set_trial_context(
-        target,
-        trial_id=trial_data["trial_id"],
+        lottery_reveal,
+        trial_id=trial_index,
         phase="lottery_reveal",
-        deadline_s=lottery_dur,
+        deadline_s=lottery_reveal_duration,
         valid_keys=[],
-        block_id=trial_data["block_id"],
+        block_id=block_id_val,
         condition_id=parsed["condition_id"],
         task_factors={
             "stage": "lottery_reveal",
@@ -161,74 +156,70 @@ def run_trial(
         },
         stim_id="lottery_offer",
     )
-    target.capture_response(
+    lottery_reveal.capture_response(
         keys=[],
-        duration=lottery_dur,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_lottery_onset") or settings.triggers.get(f"{parsed['condition']}_lottery_reveal_onset"),
+        duration=lottery_reveal_duration,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_lottery_reveal_onset"),
         terminate_on_response=False,
     )
-    target.to_dict(trial_data)
+    lottery_reveal.to_dict(trial_data)
 
     outcome_value = int(parsed["outcome_value"])
     outcome_kind = str(parsed["outcome_kind"])
-    cumulative_score = controller.register_outcome(
-        condition=parsed["condition"],
-        block_idx=block_idx_val,
-        trial_index=int(trial_data["trial_id"]),
-        outcome_value=outcome_value,
-        outcome_kind=outcome_kind,
-    )
+    total_score = score_tracker.update(outcome_value)
 
-    feedback_dur = float(getattr(settings, "outcome_feedback_duration", getattr(settings, "feedback_duration", 0.5)))
-    outcome_unit_name = f"outcome_{outcome_kind}"
-    feedback = make_unit(unit_label="feedback").add_stim(
+    outcome_feedback_duration = float(getattr(settings, "outcome_feedback_duration", 0.5))
+    outcome_stim_id = f"outcome_{outcome_kind}"
+    outcome_feedback = make_unit(unit_label="outcome_feedback").add_stim(
         stim_bank.get_and_format(
-            outcome_unit_name,
+            outcome_stim_id,
             outcome_value=outcome_value,
-            total_score=cumulative_score,
+            total_score=total_score,
         )
     )
     set_trial_context(
-        feedback,
-        trial_id=trial_data["trial_id"],
+        outcome_feedback,
+        trial_id=trial_index,
         phase="outcome_feedback",
-        deadline_s=feedback_dur,
+        deadline_s=outcome_feedback_duration,
         valid_keys=[],
-        block_id=trial_data["block_id"],
+        block_id=block_id_val,
         condition_id=parsed["condition_id"],
         task_factors={
             "stage": "outcome_feedback",
             "condition": parsed["condition"],
             "outcome_value": outcome_value,
             "outcome_kind": outcome_kind,
-            "total_score": cumulative_score,
+            "total_score": total_score,
             "block_idx": block_idx_val,
         },
-        stim_id=outcome_unit_name,
+        stim_id=outcome_stim_id,
     )
-    feedback.show(
-        duration=feedback_dur,
-        onset_trigger=settings.triggers.get(f"{parsed['condition']}_{outcome_kind}_outcome_onset") or settings.triggers.get(f"{parsed['condition']}_{outcome_kind}_outcome_feedback_onset"),
+    outcome_feedback.show(
+        duration=outcome_feedback_duration,
+        onset_trigger=settings.triggers.get(f"{parsed['condition']}_{outcome_kind}_outcome_feedback_onset"),
     ).to_dict(trial_data)
 
-    iti_dur = float(getattr(settings, "iti_duration", 0.6))
+    iti_duration = float(getattr(settings, "iti_duration", 0.6))
     iti = make_unit(unit_label="iti").add_stim(stim_bank.get("fixation"))
     set_trial_context(
         iti,
-        trial_id=trial_data["trial_id"],
+        trial_id=trial_index,
         phase="iti",
-        deadline_s=iti_dur,
+        deadline_s=iti_duration,
         valid_keys=[],
-        block_id=trial_data["block_id"],
+        block_id=block_id_val,
         condition_id=parsed["condition_id"],
         task_factors={"stage": "iti", "block_idx": block_idx_val},
         stim_id="fixation",
     )
-    iti.show(duration=iti_dur, onset_trigger=settings.triggers.get("iti_onset")).to_dict(trial_data)
+    iti.show(
+        duration=iti_duration,
+        onset_trigger=settings.triggers.get("iti_onset"),
+    ).to_dict(trial_data)
 
     trial_data["outcome_kind"] = outcome_kind
     trial_data["outcome_value"] = outcome_value
     trial_data["feedback_delta"] = outcome_value
-    trial_data["total_score"] = cumulative_score
-
+    trial_data["total_score"] = total_score
     return trial_data

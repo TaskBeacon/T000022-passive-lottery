@@ -21,7 +21,7 @@ from psyflow import (
     runtime_context,
 )
 
-from src import Controller, run_trial
+from src import ScoreTracker, generate_passive_lottery_conditions, run_trial
 
 MODES = ("human", "qa", "sim")
 DEFAULT_CONFIG_BY_MODE = {
@@ -34,7 +34,7 @@ DEFAULT_CONFIG_BY_MODE = {
 def run(options: TaskRunOptions):
     """Run Passive Lottery Task in human/qa/sim mode with one auditable flow."""
     task_root = Path(__file__).resolve().parent
-    cfg = load_config(str(options.config_path))
+    cfg = load_config(str(options.config_path), extra_keys=["condition_generation"])
     
     output_dir: Path | None = None
     runtime_scope = nullcontext()
@@ -70,23 +70,24 @@ def run(options: TaskRunOptions):
             settings.log_file = str(output_dir / "qa_psychopy.log")
             settings.json_file = str(output_dir / "qa_settings.json")
 
-        # 4. Setup triggers
+        # 4. Task-specific condition generation settings (no task controller object)
+        condition_generation = cfg.get("condition_generation_config", {})
+
+        # 5. Setup triggers
         settings.triggers = cfg["trigger_config"]
         trigger_runtime = initialize_triggers(mock=True) if options.mode in ("qa", "sim") else initialize_triggers(cfg)
 
-        # 5. Set up window & input
+        # 6. Set up window & input
         win, kb = initialize_exp(settings)
 
-        # 6. Setup stimulus bank
+        # 7. Setup stimulus bank
         stim_bank = StimBank(win, cfg["stim_config"])
         if options.mode not in ("qa", "sim"):
             stim_bank = stim_bank.convert_to_voice("instruction_text")
         stim_bank = stim_bank.preload_all()
 
-        # 7. Setup controller
-        settings.controller = cfg["controller_config"]
-        settings.save_to_json()
-        controller = Controller.from_dict(settings.controller)
+        # 8. Setup score tracker
+        score_tracker = ScoreTracker(initial_score=int(getattr(settings, "initial_score", 0)))
 
         trigger_runtime.send(settings.triggers.get("exp_onset"))
 
@@ -103,12 +104,6 @@ def run(options: TaskRunOptions):
             if options.mode not in ("qa", "sim"):
                 count_down(win, 3, color="black")
 
-            planned_conditions = controller.prepare_block(
-                block_idx=block_i,
-                n_trials=int(settings.trial_per_block),
-                conditions=list(settings.conditions),
-            )
-
             block = (
                 BlockUnit(
                     block_id=f"block_{block_i}",
@@ -117,14 +112,22 @@ def run(options: TaskRunOptions):
                     window=win,
                     keyboard=kb,
                 )
-                .add_condition(planned_conditions)
+                .generate_conditions(
+                    func=generate_passive_lottery_conditions,
+                    n_trials=int(settings.trials_per_block),
+                    condition_labels=list(getattr(settings, "conditions", [])),
+                    seed=int(settings.block_seed[block_i]),
+                    seed_offset=int(condition_generation.get("seed", 2026)) + int(block_i) * 1009,
+                    lottery_profiles=dict(condition_generation.get("lottery_profiles", {})),
+                    enable_logging=bool(condition_generation.get("enable_logging", True)),
+                )
                 .on_start(lambda b: trigger_runtime.send(settings.triggers.get("block_onset")))
                 .on_end(lambda b: trigger_runtime.send(settings.triggers.get("block_end")))
                 .run_trial(
                     partial(
                         run_trial,
                         stim_bank=stim_bank,
-                        controller=controller,
+                        score_tracker=score_tracker,
                         trigger_runtime=trigger_runtime,
                         block_id=f"block_{block_i}",
                         block_idx=block_i,
@@ -148,11 +151,11 @@ def run(options: TaskRunOptions):
                     total_blocks=settings.total_blocks,
                     win_rate=win_rate,
                     block_score=block_score,
-                    total_score=controller.total_score,
+                    total_score=score_tracker.total_score,
                 )
             ).wait_and_continue()
 
-        final_score = int(controller.total_score)
+        final_score = int(score_tracker.total_score)
         StimUnit("goodbye", win, kb, runtime=trigger_runtime).add_stim(
             stim_bank.get_and_format("good_bye", total_score=final_score)
         ).wait_and_continue(terminate=True)

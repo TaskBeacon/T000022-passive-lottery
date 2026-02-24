@@ -5,11 +5,11 @@
 | Field | Value |
 |---|---|
 | Name | Passive Lottery Task |
-| Version | v0.2.2-dev |
+| Version | v0.2.3-dev |
 | URL / Repository | https://github.com/TaskBeacon/T000022-passive-lottery |
 | Short Description | Passive observation task for gain/loss/mixed lottery outcomes with deterministic profile-driven sampling. |
 | Created By | TaskBeacon |
-| Date Updated | 2026-02-19 |
+| Date Updated | 2026-02-24 |
 | PsyFlow Version | 0.1.9 |
 | PsychoPy Version | 2025.1.1 |
 | Modality | Behavior |
@@ -26,7 +26,7 @@ In this task, participants passively observe lottery cues, offer displays, and o
 
 | Step | Description |
 |---|---|
-| 1. Prepare block schedule | `Controller.prepare_block(...)` generates balanced, randomized trial sequences and pre-sampled outcomes. |
+| 1. Prepare block schedule | Custom condition generation builds balanced, randomized trial sequences and pre-sampled outcomes. |
 | 2. Execute trials | `BlockUnit(...).run_trial(...)` executes each planned trial. |
 | 3. Block summary | Block hit rate, block score, and cumulative score are displayed. |
 
@@ -44,6 +44,7 @@ In this task, participants passively observe lottery cues, offer displays, and o
 
 | Component | Description |
 |---|---|
+| Architecture note | No task controller object is used; `condition_generation` defines lottery profiles/sampling and a `ScoreTracker` accumulates score. |
 | Condition balancing | Gain/loss/mixed conditions are balanced across trials. |
 | Outcome sampling | Trial outcome is sampled from profile probabilities. |
 | Score accumulation | Trial deltas and cumulative score are tracked. |
@@ -82,7 +83,7 @@ In this task, participants passively observe lottery cues, offer displays, and o
 
 | Name | Type | Description |
 |---|---|---|
-| `condition_cue` | text | Condition-specific cue label from controller profile. |
+| `condition_cue` | text | Condition-specific cue label from `condition_generation.lottery_profiles`. |
 | `lottery_offer` | text | Lottery probability-outcome display with two possible outcomes. |
 | `outcome_win` / `outcome_neutral` / `outcome_loss` | text | Valence-specific outcome feedback screens with cumulative score. |
 | `fixation` | text | Central fixation marker. |
@@ -110,7 +111,7 @@ In this task, participants passively observe lottery cues, offer displays, and o
 | Outcome feedback by condition x valence | `50-58` |
 | Inter-trial interval | `iti_onset=60` |
 
-### f. Lottery Controller
+### f. Lottery Profiles (`condition_generation`)
 
 | Profile | Probability of Outcome A | Outcome A | Outcome B |
 |---|---:|---:|---:|

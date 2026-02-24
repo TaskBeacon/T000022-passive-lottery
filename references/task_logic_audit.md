@@ -18,33 +18,33 @@
 
 - Human profile: `task.total_blocks=3`, `task.trial_per_block=24`, `task.total_trials=72`.
 - QA and sim profiles: shortened to `1 x 9` for gate-speed execution.
-- Condition scheduling: `Controller.prepare_block(...)` builds a balanced condition list, shuffles with seeded RNG, and pre-samples outcomes from each condition profile.
+- Condition scheduling: custom condition generation builds a balanced condition list, shuffles with seeded RNG, and pre-samples outcomes from each condition profile.
 
 ### Trial State Machine
 
 1. `condition_cue`
-   - Onset trigger: `{condition}_condition_cue_onset` (`20/21/22`; fallback-compatible with `{condition}_cue_onset`).
+   - Onset trigger: `{condition}_condition_cue_onset` (`20/21/22`).
    - Stimulus shown: `condition_cue` text with condition-specific label.
    - Valid keys: none.
-   - Timeout behavior: fixed `timing.condition_cue_duration` (fallback-compatible with `timing.cue_duration`), then auto-advance.
+   - Timeout behavior: fixed `timing.condition_cue_duration`, then auto-advance.
    - Next state: `pre_lottery_fixation`.
 2. `pre_lottery_fixation`
-   - Onset trigger: `{condition}_pre_lottery_fixation_onset` (`30/31/32`; fallback-compatible with `{condition}_anticipation_onset`).
+   - Onset trigger: `{condition}_pre_lottery_fixation_onset` (`30/31/32`).
    - Stimulus shown: `fixation` (`+`).
    - Valid keys: none.
-   - Timeout behavior: fixed `timing.pre_lottery_fixation_duration` (fallback-compatible with `timing.anticipation_duration`), then auto-advance.
+   - Timeout behavior: fixed `timing.pre_lottery_fixation_duration`, then auto-advance.
    - Next state: `lottery_reveal`.
 3. `lottery_reveal`
-   - Onset trigger: `{condition}_lottery_reveal_onset` (`40/41/42`; fallback-compatible with `{condition}_lottery_onset`).
+   - Onset trigger: `{condition}_lottery_reveal_onset` (`40/41/42`).
    - Stimulus shown: `lottery_offer` with probability and two outcomes.
-   - Valid keys: none (`capture_response(keys=[])` for passive timing trace only).
-   - Timeout behavior: fixed `timing.lottery_reveal_duration` (fallback-compatible with `timing.lottery_duration`), then auto-advance.
+   - Valid keys: none.
+   - Timeout behavior: fixed `timing.lottery_reveal_duration`, then auto-advance.
    - Next state: `outcome_feedback`.
 4. `outcome_feedback`
-   - Onset trigger: `{condition}_{outcome_kind}_outcome_feedback_onset` (`50-58`; fallback-compatible with `{condition}_{outcome_kind}_outcome_onset`).
+   - Onset trigger: `{condition}_{outcome_kind}_outcome_feedback_onset` (`50-58`).
    - Stimulus shown: `outcome_win` or `outcome_neutral` or `outcome_loss`.
    - Valid keys: none.
-   - Timeout behavior: fixed `timing.outcome_feedback_duration` (fallback-compatible with `timing.feedback_duration`), then auto-advance.
+   - Timeout behavior: fixed `timing.outcome_feedback_duration`, then auto-advance.
    - Next state: `iti`.
 5. `iti`
    - Onset trigger: `iti_onset` (`60`).
@@ -66,15 +66,15 @@ Session wrappers:
 
 - Condition ID: `gain`
   - Participant-facing meaning: high-probability non-negative lottery (positive or zero points).
-  - Concrete realization: cue label from `controller.lottery_profiles.gain.label`, then offer text with `prob_a=0.75`, outcomes `+10` and `0`.
+  - Concrete realization: cue label from `condition_generation.lottery_profiles.gain.label`, then offer text with `prob_a=0.75`, outcomes `+10` and `0`.
   - Outcome rules: sampled by RNG; outcome kind is `win` for `+10`, `neutral` for `0`.
 - Condition ID: `loss`
   - Participant-facing meaning: high-probability negative lottery (negative or zero points).
-  - Concrete realization: cue label from `controller.lottery_profiles.loss.label`, then offer text with `prob_a=0.75`, outcomes `-10` and `0`.
+  - Concrete realization: cue label from `condition_generation.lottery_profiles.loss.label`, then offer text with `prob_a=0.75`, outcomes `-10` and `0`.
   - Outcome rules: outcome kind is `loss` for `-10`, `neutral` for `0`.
 - Condition ID: `mixed`
   - Participant-facing meaning: balanced mixed-valence lottery.
-  - Concrete realization: cue label from `controller.lottery_profiles.mixed.label`, then offer text with `prob_a=0.5`, outcomes `+10` and `-10`.
+  - Concrete realization: cue label from `condition_generation.lottery_profiles.mixed.label`, then offer text with `prob_a=0.5`, outcomes `+10` and `-10`.
   - Outcome rules: outcome kind is `win` for `+10`, `loss` for `-10`.
 
 ## 4. Response and Scoring Rules
@@ -88,7 +88,7 @@ Session wrappers:
 - Correctness logic:
   - No correct/incorrect classification; passive observation only.
 - Reward/penalty update:
-  - `controller.register_outcome(...)` adds `outcome_value` to running `total_score` each trial.
+  - `ScoreTracker.update(...)` adds `outcome_value` to running `total_score` each trial.
 - Running metrics:
   - Trial-level: condition, sampled outcomes, trigger-aligned timestamps, cumulative score.
   - Block-level: block score and win-rate summary on `block_break`.
@@ -141,7 +141,7 @@ There are no screens with multiple simultaneous choice options in this passive d
 - Decision: use passive no-response trial flow with only continue-key pages.
   - Why inference was required: selected sources describe reward/uncertainty processing but do not provide a single canonical buttonless implementation spec for this exact task package.
   - Citation-supported rationale: passive valuation framing is consistent with `W2002597000`, while cue-anticipation-outcome sequencing is aligned to `W2140531843`.
-- Decision: use three lottery profiles (`gain/loss/mixed`) with deterministic profile parameters in controller config.
+- Decision: use three lottery profiles (`gain/loss/mixed`) with deterministic profile parameters in `condition_generation` config.
   - Why inference was required: exact probability/outcome constants are not directly specified as a reusable software standard in selected papers.
   - Citation-supported rationale: profile structure operationalizes reward, punishment, and mixed expectancy contrasts from prediction-error literature (`W2140531843`, `W2035219495`).
 - Decision: keep participant-facing language as Chinese with `SimHei`.
