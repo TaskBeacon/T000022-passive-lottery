@@ -1,15 +1,19 @@
 # Stimulus Mapping
 
-Task: `Passive Lottery Task`
+## Mapping Table
 
-| Condition | Implemented Stimulus IDs | Source Paper ID | Evidence (quote/figure/table) | Implementation Mode | Notes |
-|---|---|---|---|---|---|
-| `gain` | `condition_cue`, `fixation`, `lottery_offer`, `outcome_win`, `outcome_neutral` | `W2140531843` | Methods describe condition-specific cue, anticipation interval, and valence-dependent outcome feedback in reward/punishment prediction-error trials. | `psychopy_builtin` | Gain profile is rendered via `condition_generation.lottery_profiles` values (`prob_a=0.75`, outcomes `+10/0`); exact numeric values are marked `inferred` in parameter mapping. |
-| `loss` | `condition_cue`, `fixation`, `lottery_offer`, `outcome_loss`, `outcome_neutral` | `W2140531843` | Same cue-to-outcome state structure is used for punishment-context trials with negative or neutral outcomes. | `psychopy_builtin` | Loss profile uses `prob_a=0.75`, outcomes `-10/0`; cue label is participant-facing text from `condition_generation` config. |
-| `mixed` | `condition_cue`, `fixation`, `lottery_offer`, `outcome_win`, `outcome_loss` | `W2140531843` | Mixed-valence prediction context follows the same anticipatory and feedback timeline while sampling positive vs negative outcomes. | `psychopy_builtin` | Mixed profile uses `prob_a=0.5`, outcomes `+10/-10`; no raw internal condition tokens are shown to participants. |
-| `all_conditions` | `instruction_text`, `block_break`, `good_bye` | `W2002597000` | Passive-viewing paradigms support non-choice framing and instruction-driven observation without trial-level motor response. | `psychopy_builtin` | Continue-key pages are outside trial scoring and are shared across all conditions. |
-
-Implementation mode legend:
-- `psychopy_builtin`: stimulus rendered via PsychoPy primitives in config.
-- `generated_reference_asset`: task-specific synthetic assets generated from reference-described stimulus rules.
-- `licensed_external_asset`: externally sourced licensed media with protocol linkage.
+| Condition | Stage/Phase | Stimulus IDs | Participant-Facing Content | Source Paper ID | Evidence (quote/figure/table) | Implementation Mode | Asset References | Notes |
+|---|---|---|---|---|---|---|---|---|
+| `gain` | `condition_cue` | `condition_cue` | Gain-context cue text from `condition_generation.lottery_profiles.gain.label` (Chinese localized wording in config). | `W2140531843` | Methods describe condition-specific cue preceding outcome phase in reward context. | `psychopy_builtin` | `config/config.yaml -> stimuli.condition_cue` | Internal token `gain` is not shown directly to participants. |
+| `gain` | `pre_lottery_fixation` | `fixation` | Center fixation `"+"` prior to lottery reveal. | `W2140531843` | Cue-anticipation separation is part of trial timeline. | `psychopy_builtin` | `config/config.yaml -> stimuli.fixation` | Shared fixation across all conditions. |
+| `gain` | `lottery_reveal` | `lottery_offer` | Probability/outcome text for reward profile (positive or neutral outcomes). | `W2140531843` | Reward profile is operationalized with probabilistic outcomes before feedback. | `psychopy_builtin` | `config/config.yaml -> stimuli.lottery_offer` | Concrete numbers loaded from `condition_generation.lottery_profiles.gain`. |
+| `gain` | `outcome_feedback` | `outcome_win`, `outcome_neutral` | Outcome text with valence-coded formatting and cumulative score line. | `W2140531843` | Outcome-valence feedback is core PE event. | `psychopy_builtin` | `config/config.yaml -> stimuli.outcome_*` | Trigger code reflects condition and outcome kind. |
+| `loss` | `condition_cue` | `condition_cue` | Loss-context cue text from `condition_generation.lottery_profiles.loss.label`. | `W2140531843` | Punishment context uses same cue-driven sequence. | `psychopy_builtin` | `config/config.yaml -> stimuli.condition_cue` | Localized through config text templates. |
+| `loss` | `pre_lottery_fixation` | `fixation` | Center fixation `"+"` before reveal. | `W2140531843` | Anticipatory separation stage. | `psychopy_builtin` | `config/config.yaml -> stimuli.fixation` | Shared with gain/mixed. |
+| `loss` | `lottery_reveal` | `lottery_offer` | Probability/outcome text for punishment profile (negative or neutral outcomes). | `W2140531843` | Punishment profile modeled with probabilistic negative outcomes. | `psychopy_builtin` | `config/config.yaml -> stimuli.lottery_offer` | Values come from loss profile config. |
+| `loss` | `outcome_feedback` | `outcome_loss`, `outcome_neutral` | Loss/neutral feedback text with updated score. | `W2140531843` | Punishment outcome feedback is explicit phase in trial sequence. | `psychopy_builtin` | `config/config.yaml -> stimuli.outcome_*` | No trial response prompt shown. |
+| `mixed` | `condition_cue` | `condition_cue` | Mixed-valence cue text from `condition_generation.lottery_profiles.mixed.label`. | `W2140531843` | Mixed expectancy context included in valence design. | `psychopy_builtin` | `config/config.yaml -> stimuli.condition_cue` | Config-driven wording supports localization. |
+| `mixed` | `pre_lottery_fixation` | `fixation` | Center fixation `"+"` before reveal. | `W2140531843` | Same anticipation slot as other conditions. | `psychopy_builtin` | `config/config.yaml -> stimuli.fixation` | Shared visual primitive. |
+| `mixed` | `lottery_reveal` | `lottery_offer` | Probability/outcome text for mixed profile (positive vs negative outcomes). | `W2140531843` | Mixed PE context contrasts opposite-valence outcomes. | `psychopy_builtin` | `config/config.yaml -> stimuli.lottery_offer` | Parameters sourced from mixed profile config. |
+| `mixed` | `outcome_feedback` | `outcome_win`, `outcome_loss` | Win/loss feedback text with cumulative score line. | `W2140531843` | Outcome valence differentiation is required by model. | `psychopy_builtin` | `config/config.yaml -> stimuli.outcome_*` | Trigger family `56-58` for mixed outcomes. |
+| `all_conditions` | `instruction_and_break_pages` | `instruction_text`, `block_break`, `good_bye` | Page-level guidance and continue prompts (`space`) outside trial scoring. | `W2002597000` | Passive-viewing paradigms rely on instruction-led observation without trial responses. | `psychopy_builtin` | `config/config.yaml -> stimuli.instruction_text/block_break/good_bye` | Shared across all trial conditions. |

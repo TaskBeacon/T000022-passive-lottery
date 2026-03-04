@@ -7,12 +7,12 @@
 
 ## Selected Papers
 
-| ID | Year | Citations | Journal | High Impact | Title |
-|---|---:|---:|---|---|---|
-| W2140531843 | 2012 | 117 | Cerebral Cortex | yes | Cerebral Correlates of Salient Prediction Error for Different Rewards and Punishments |
-| W2035219495 | 2010 | 262 | Journal of Neuroscience | no | Testing the Reward Prediction Error Hypothesis with an Axiomatic Model |
-| W2002597000 | 2011 | 212 | Journal of Neuroscience | no | Choice from Non-Choice: Predicting Consumer Preferences from Blood Oxygenation Level-Dependent Signals Obtained during Passive Viewing |
-| W2024690164 | 2011 | 113 | Journal of Neuroscience | no | The Known Unknowns: Neural Representation of Second-Order Uncertainty, and Ambiguity |
+| ID | Year | Citations | Journal | High Impact | Open Access | Title |
+|---|---:|---:|---|---|---|---|
+| W2140531843 | 2012 | 117 | Cerebral Cortex | yes | yes | Cerebral Correlates of Salient Prediction Error for Different Rewards and Punishments |
+| W2035219495 | 2010 | 262 | Journal of Neuroscience | no | yes | Testing the Reward Prediction Error Hypothesis with an Axiomatic Model |
+| W2002597000 | 2011 | 212 | Journal of Neuroscience | no | yes | Choice from Non-Choice: Predicting Consumer Preferences from Blood Oxygenation Level-Dependent Signals Obtained during Passive Viewing |
+| W2024690164 | 2011 | 113 | Journal of Neuroscience | no | yes | The Known Unknowns: Neural Representation of Second-Order Uncertainty, and Ambiguity |
 
 ## Notes
 

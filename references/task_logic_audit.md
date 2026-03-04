@@ -136,7 +136,14 @@ There are no screens with multiple simultaneous choice options in this passive d
 | `gain_win_outcome_feedback_onset` ... `mixed_loss_outcome_feedback_onset` | 50-58 | Outcome feedback onset by condition and valence |
 | `iti_onset` | 60 | ITI fixation onset |
 
-## 7. Inference Log
+## 7. Architecture Decisions (Auditability)
+
+- Keep trial phases explicitly named as `condition_cue -> pre_lottery_fixation -> lottery_reveal -> outcome_feedback -> iti` so runtime logs match literature audit vocabulary.
+- Keep participant-facing text in `config/*.yaml` stimulus templates and `condition_generation.lottery_profiles.*.label`; avoid hardcoded trial wording in runtime code to preserve localization portability.
+- Keep deterministic condition generation and pre-sampled outcomes via seeded RNG to support replayable QA/sim traces.
+- Keep trigger naming condition- and phase-specific (`{condition}_{phase}_onset`) for straightforward event-to-paradigm mapping.
+
+## 8. Inference Log
 
 - Decision: use passive no-response trial flow with only continue-key pages.
   - Why inference was required: selected sources describe reward/uncertainty processing but do not provide a single canonical buttonless implementation spec for this exact task package.
