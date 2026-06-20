@@ -65,7 +65,8 @@ def run_trial(
     block_id_val = str(block_id) if block_id is not None else "block_0"
 
     trial_data = {
-        "trial_id": trial_index,
+        "trial_id": trial_id,
+        "trial_index": trial_index,
         "block_id": block_id_val,
         "block_idx": block_idx_val,
         "condition": parsed["condition"],
@@ -87,7 +88,7 @@ def run_trial(
     )
     set_trial_context(
         condition_cue,
-        trial_id=trial_index,
+        trial_id=trial_id,
         phase="condition_cue",
         deadline_s=condition_cue_duration,
         valid_keys=[],
@@ -110,7 +111,7 @@ def run_trial(
     pre_lottery_fixation = make_unit(unit_label="pre_lottery_fixation").add_stim(stim_bank.get("fixation"))
     set_trial_context(
         pre_lottery_fixation,
-        trial_id=trial_index,
+        trial_id=trial_id,
         phase="pre_lottery_fixation",
         deadline_s=pre_lottery_fixation_duration,
         valid_keys=[],
@@ -140,7 +141,7 @@ def run_trial(
     )
     set_trial_context(
         lottery_reveal,
-        trial_id=trial_index,
+        trial_id=trial_id,
         phase="lottery_reveal",
         deadline_s=lottery_reveal_duration,
         valid_keys=[],
@@ -179,7 +180,7 @@ def run_trial(
     )
     set_trial_context(
         outcome_feedback,
-        trial_id=trial_index,
+        trial_id=trial_id,
         phase="outcome_feedback",
         deadline_s=outcome_feedback_duration,
         valid_keys=[],
@@ -204,7 +205,7 @@ def run_trial(
     iti = make_unit(unit_label="iti").add_stim(stim_bank.get("fixation"))
     set_trial_context(
         iti,
-        trial_id=trial_index,
+        trial_id=trial_id,
         phase="iti",
         deadline_s=iti_duration,
         valid_keys=[],
