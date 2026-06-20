@@ -22,6 +22,8 @@ In this task, participants passively observe lottery cues, offer displays, and o
 
 ## 2. Task Flow
 
+![Task Flow](task_flow.png)
+
 ### Block-Level Flow
 
 | Step | Description |
