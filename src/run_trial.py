@@ -1,49 +1,9 @@
 from __future__ import annotations
 
 from functools import partial
-from typing import Any
-
 from psyflow import StimUnit, next_trial_id, set_trial_context
 
-
-def _parse_condition(condition: Any) -> dict[str, Any]:
-    if isinstance(condition, tuple) and len(condition) >= 9:
-        (
-            condition_name,
-            condition_label,
-            prob_a,
-            outcome_a,
-            outcome_b,
-            outcome_value,
-            outcome_kind,
-            condition_id,
-            trial_index,
-            *_,
-        ) = condition
-        return {
-            "condition": str(condition_name),
-            "condition_label": str(condition_label),
-            "prob_a": float(prob_a),
-            "outcome_a": int(outcome_a),
-            "outcome_b": int(outcome_b),
-            "outcome_value": int(outcome_value),
-            "outcome_kind": str(outcome_kind),
-            "condition_id": str(condition_id),
-            "trial_index": int(trial_index),
-        }
-    if isinstance(condition, dict):
-        return {
-            "condition": str(condition.get("condition", "gain")),
-            "condition_label": str(condition.get("condition_label", condition.get("condition", "gain"))),
-            "prob_a": float(condition.get("prob_a", 0.5)),
-            "outcome_a": int(condition.get("outcome_a", 0)),
-            "outcome_b": int(condition.get("outcome_b", 0)),
-            "outcome_value": int(condition.get("outcome_value", 0)),
-            "outcome_kind": str(condition.get("outcome_kind", "neutral")),
-            "condition_id": str(condition.get("condition_id", "unknown")),
-            "trial_index": int(condition.get("trial_index", 0)),
-        }
-    raise ValueError(f"Unsupported passive-lottery condition format: {condition!r}")
+from .utils import parse_passive_lottery_condition
 
 
 def run_trial(
@@ -58,7 +18,7 @@ def run_trial(
     block_idx=None,
 ):
     """Run a single passive-lottery trial (no in-trial participant response)."""
-    parsed = _parse_condition(condition)
+    parsed = parse_passive_lottery_condition(condition)
     trial_id = next_trial_id()
     block_idx_val = int(block_idx) if block_idx is not None else 0
     trial_index = int(parsed["trial_index"]) if int(parsed["trial_index"]) > 0 else int(trial_id)
